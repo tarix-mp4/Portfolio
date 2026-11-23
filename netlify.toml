@@ -1,0 +1,5 @@
+# Repository only: the live V7 site is deployed separately.
+# Skip Git-triggered builds and block publishing if a build hook is run.
+[build]
+  ignore = "exit 0"
+  command = "echo 'Publishing disabled: configure and verify video delivery first. See README.md.' >&2 && exit 1"
