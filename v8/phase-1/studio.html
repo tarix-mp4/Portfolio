@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Phase 1 concept: a digital stage for Tareq Albarqawi&#x27;s film, motion design, and photography.">
+<title>The Digital Studio — Tareq Albarqawi</title>
+<link rel="icon" href="../../favicon.png">
+<link rel="preload" href="../../assets/barlow-condensed-bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="studio.css">
+</head>
+<body class="studio" id="top" data-concept="studio">
+<a class="skip" href="#main">Skip to content</a>
+<header class="stage-nav"><div class="site-frame head-row">
+  <a class="brand" href="#top" aria-label="Back to top"><svg aria-hidden="true" viewBox="0 0 26 26" width="26" height="26" fill="none"><path d="M13 1.5 23 7.25v11.5L13 24.5 3 18.75V7.25L13 1.5Z M13 1.5 17.5 10 M23 7.25h-9 M23 18.75l-4.5-8 M13 24.5l-4.5-8 M3 18.75h9 M3 7.25l4.5 8" stroke="currentColor" stroke-width="1.3"/></svg><span>TA.<small> THE DIGITAL STUDIO</small></span></a>
+  <nav aria-label="Portfolio"><a href="#work">Work</a><a href="#stills">Stills</a><a href="#contact">Contact</a></nav>
+  <a class="review-link mono" href="index.html"><span class="review-long">Design review</span><span class="review-short">Review</span></a>
+</div></header>
+<main id="main">
+<section class="hero-studio site-frame" aria-labelledby="hero-title">
+  <div class="hero-intro">
+    <p class="mono eyebrow"><span></span> Bahrain · Independent creative practice</p>
+    <h1 id="hero-title"><span>TAREQ</span> <span>ALBARQAWI</span></h1>
+    <p class="hero-role">Filmmaker, director, editor.<br>3D animation, motion design and photography.</p>
+    <div class="reel-ticket">
+      <img src="../../assets/showreel-CYh5Zr_7LJ8.webp" alt="Still from the 2026 showreel" width="405" height="720" fetchpriority="high">
+      <div><p class="mono">2026 SHOWREEL · 9:16</p><a class="button primary reel-cta" href="https://www.youtube.com/shorts/CYh5Zr_7LJ8?feature=share" target="_blank" rel="noopener" data-screen="showreel"><svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><path d="M6 3.4v13.2L16 10z" fill="currentColor"/></svg><span>Open showreel</span></a></div>
+    </div>
+  </div>
+  <div class="stage" aria-labelledby="stage-title">
+    <div class="stage-header mono"><span id="stage-title">OBJECT STUDY / GOLD RIBBON</span><span class="stage-code">STAGE VIEW</span></div>
+    <div class="stage-view">
+      <div class="target" aria-hidden="true"></div>
+      <div class="stage-floor" aria-hidden="true"></div>
+      <div class="stage-shadow" aria-hidden="true"></div>
+      <img class="sculpture" data-sculpture src="../../assets/motion-sculpture.webp" width="1400" height="1400" alt="The original gold ribbon sculpture from V7" fetchpriority="high">
+      <canvas data-mesh hidden aria-hidden="true"></canvas>
+      <span class="view-bracket top-left" aria-hidden="true"></span><span class="view-bracket top-right" aria-hidden="true"></span><span class="view-bracket bottom-left" aria-hidden="true"></span><span class="view-bracket bottom-right" aria-hidden="true"></span>
+      <p class="stage-caption mono">A studio study in form &amp; light</p>
+    </div>
+    <div class="stage-deck">
+      <div class="segmented" role="group" aria-label="Sculpture display">
+        <button type="button" data-material="gold" aria-pressed="true">Gold</button>
+        <button type="button" data-material="wire" aria-pressed="false">Wireframe</button>
+      </div>
+      <button class="live-toggle" type="button" data-live aria-pressed="false">Enable live 3D</button>
+      <label class="stage-angle" hidden><span class="mono">Orbit</span><input data-orbit type="range" min="-60" max="90" value="0" step="5" aria-label="Sculpture orbit"></label>
+      <p class="stage-status" role="status">Still view · live orbit is optional</p>
+    </div>
+  </div>
+  <div class="studio-baseline mono"><span>CONCEPT A / DIGITAL STUDIO</span><span>FILM · FORM · LIGHT</span></div>
+</section>
+<section class="studio-work site-frame" id="work" aria-labelledby="work-title">
+  <div class="section-lead"><div><p class="mono eyebrow"><span></span> The screening room</p><h2 id="work-title">SELECTED<br>WORK.</h2></div><p>Choose a project to bring it onto the monitor. Scrub through frames from the original footage.</p></div>
+  <div class="workbench">
+    <article class="monitor" aria-label="Project monitor" data-monitor>
+      <div class="monitor-bar mono"><span>PROJECT MONITOR</span><span data-monitor-format>16:9 / 3D ENVIRONMENT</span></div>
+      <div class="monitor-well" data-well><div class="screen-frame" data-film-visual><img src="media/deer-frame.webp" alt="Deer Scene preview" width="640" height="360" loading="lazy"></div></div>
+      <div class="monitor-copy"><p class="mono" data-monitor-role>3D Artist</p><h3 data-monitor-title>Deer Scene</h3><p data-monitor-summary>An idling deer in an atmospheric Blender environment, exploring lighting and mood.</p><button class="button secondary" type="button" data-screen="deer-scene"><span>Screening notes</span></button></div>
+      <div class="scan-controls" data-scan="deer-scene">
+  <label class="mono" for="frame-deer-scene">Scrub actual frames</label>
+  <input id="frame-deer-scene" type="range" min="0" max="32" step="1" value="0" aria-valuetext="Frame 1 of 33">
+  <output for="frame-deer-scene" class="mono" aria-hidden="true">00:00</output>
+  <p class="scan-note">33 stills from the original video. Playback uses an external link where available.</p>
+</div>
+    </article>
+    <div class="project-drawer" aria-label="Select a project"><div class="mono drawer-label">PROJECT LIBRARY <span>8 FILMS</span></div>
+      <button class="project-option" type="button" data-project="deer-scene" aria-pressed="true"><img src="media/deer-frame.webp" alt="" width="68" height="43" loading="lazy" decoding="async"><span><strong>Deer Scene</strong><small>3D environment</small></span><span class="mark" aria-hidden="true"></span></button>
+<button class="project-option" type="button" data-project="a-quiet-trail" aria-pressed="false"><img src="../../assets/a-quiet-trail-w04hOwvVkdc.webp" alt="" width="68" height="43" loading="lazy" decoding="async"><span><strong>A Quiet Trail</strong><small>Short film</small></span><span class="mark" aria-hidden="true"></span></button>
+<button class="project-option" type="button" data-project="elham" aria-pressed="false"><img src="../../assets/elham-3bs6WSHtgNQ.webp" alt="" width="68" height="43" loading="lazy" decoding="async"><span><strong>Elham</strong><small>Documentary</small></span><span class="mark" aria-hidden="true"></span></button>
+<button class="project-option" type="button" data-project="vfx" aria-pressed="false"><img src="../../assets/vfx-kDgd1eqAqTs.webp" alt="" width="68" height="43" loading="lazy" decoding="async"><span><strong>VFX &amp; 3D Integration</strong><small>VFX</small></span><span class="mark" aria-hidden="true"></span></button>
+<button class="project-option" type="button" data-project="playthings" aria-pressed="false"><img src="../../assets/playthings-hDDDlkD6jYc.webp" alt="" width="68" height="43" loading="lazy" decoding="async"><span><strong>Playthings</strong><small>Animation</small></span><span class="mark" aria-hidden="true"></span></button>
+<button class="project-option" type="button" data-project="vision-types" aria-pressed="false"><img src="../../assets/vision-types-JmTyY6GTCEQ.webp" alt="" width="68" height="43" loading="lazy" decoding="async"><span><strong>Vision Types Simulation</strong><small>Motion design</small></span><span class="mark" aria-hidden="true"></span></button>
+<button class="project-option" type="button" data-project="acuity" aria-pressed="false"><img src="../../assets/acuity-rgeq3qAihJA.webp" alt="" width="68" height="43" loading="lazy" decoding="async"><span><strong>Acuity Comparison</strong><small>Motion design</small></span><span class="mark" aria-hidden="true"></span></button>
+<button class="project-option" type="button" data-project="social-campaigns" aria-pressed="false"><img src="../../assets/social-campaigns-flJJizkurxQ.webp" alt="" width="68" height="43" loading="lazy" decoding="async"><span><strong>Social Campaigns</strong><small>Commercial</small></span><span class="mark" aria-hidden="true"></span></button>
+    </div>
+  </div>
+  <noscript><p>The interactive monitor needs JavaScript. The alternate <a href="cut.html#work">film index</a> keeps project details and YouTube links readable.</p></noscript>
+</section>
+<section class="studio-stills" id="stills" aria-labelledby="stills-title">
+  <div class="site-frame">
+    <div class="section-lead"><div><p class="mono eyebrow"><span></span> Print room</p><h2 id="stills-title">LIGHT<br>STUDIES.</h2></div><p>Nine photographs arranged from the heat of the kitchen to the color of the night.</p></div>
+    <div class="studio-wall"><figure class="photo-tile">
+  <a href="../../assets/photography/frame-01-1367.webp" data-photo data-title="Into the heat" data-caption="Preparation beside a dramatic flame-lit oven." data-number="01">
+    <img src="../../assets/photography/frame-01-960.webp" srcset="../../assets/photography/frame-01-480.webp 480w, ../../assets/photography/frame-01-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="Preparation beside a dramatic flame-lit oven." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">01 / Culinary</span><strong>Into the heat</strong></figcaption>
+</figure><figure class="photo-tile">
+  <a href="../../assets/photography/frame-04-1367.webp" data-photo data-title="After the fire" data-caption="A fire performer surrounded by dramatic red and orange light." data-number="04">
+    <img src="../../assets/photography/frame-04-960.webp" srcset="../../assets/photography/frame-04-480.webp 480w, ../../assets/photography/frame-04-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="A fire performer surrounded by dramatic red and orange light." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">04 / Performance</span><strong>After the fire</strong></figcaption>
+</figure><figure class="photo-tile">
+  <a href="../../assets/photography/frame-06-1367.webp" data-photo data-title="A place in the dark" data-caption="A reserved table illuminated by a warm pool of light." data-number="06">
+    <img src="../../assets/photography/frame-06-960.webp" srcset="../../assets/photography/frame-06-480.webp 480w, ../../assets/photography/frame-06-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="A reserved table illuminated by a warm pool of light." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">06 / Atmosphere</span><strong>A place in the dark</strong></figcaption>
+</figure><figure class="photo-tile">
+  <a href="../../assets/photography/frame-02-1367.webp" data-photo data-title="A matter of focus" data-caption="Close-up of food being prepared, with a shallow depth of field." data-number="02">
+    <img src="../../assets/photography/frame-02-960.webp" srcset="../../assets/photography/frame-02-480.webp 480w, ../../assets/photography/frame-02-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="Close-up of food being prepared, with a shallow depth of field." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">02 / Culinary</span><strong>A matter of focus</strong></figcaption>
+</figure><figure class="photo-tile">
+  <a href="../../assets/photography/frame-03-1367.webp" data-photo data-title="Oven light" data-caption="Freshly baked food beside the warm glow of an oven." data-number="03">
+    <img src="../../assets/photography/frame-03-960.webp" srcset="../../assets/photography/frame-03-480.webp 480w, ../../assets/photography/frame-03-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="Freshly baked food beside the warm glow of an oven." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">03 / Culinary</span><strong>Oven light</strong></figcaption>
+</figure><figure class="photo-tile">
+  <a href="../../assets/photography/frame-05-1367.webp" data-photo data-title="The night has a rhythm" data-caption="A DJ wearing headphones in atmospheric nightlife lighting." data-number="05">
+    <img src="../../assets/photography/frame-05-960.webp" srcset="../../assets/photography/frame-05-480.webp 480w, ../../assets/photography/frame-05-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="A DJ wearing headphones in atmospheric nightlife lighting." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">05 / Nightlife</span><strong>The night has a rhythm</strong></figcaption>
+</figure><figure class="photo-tile">
+  <a href="../../assets/photography/frame-07-1367.webp" data-photo data-title="Between pours" data-caption="A bartender preparing a beverage in a warmly lit bar." data-number="07">
+    <img src="../../assets/photography/frame-07-960.webp" srcset="../../assets/photography/frame-07-480.webp 480w, ../../assets/photography/frame-07-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="A bartender preparing a beverage in a warmly lit bar." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">07 / People &amp; craft</span><strong>Between pours</strong></figcaption>
+</figure><figure class="photo-tile">
+  <a href="../../assets/photography/frame-08-1367.webp" data-photo data-title="Blue hour, indoors" data-caption="A moody lounge interior with blue and purple lighting." data-number="08">
+    <img src="../../assets/photography/frame-08-960.webp" srcset="../../assets/photography/frame-08-480.webp 480w, ../../assets/photography/frame-08-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="A moody lounge interior with blue and purple lighting." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">08 / Interiors</span><strong>Blue hour, indoors</strong></figcaption>
+</figure><figure class="photo-tile">
+  <a href="../../assets/photography/frame-09-1367.webp" data-photo data-title="Liquid gold" data-caption="Bottles arranged on shelves illuminated by dramatic gold lighting." data-number="09">
+    <img src="../../assets/photography/frame-09-960.webp" srcset="../../assets/photography/frame-09-480.webp 480w, ../../assets/photography/frame-09-960.webp 960w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 44vw, 40vw" width="960" height="1438" alt="Bottles arranged on shelves illuminated by dramatic gold lighting." loading="lazy" decoding="async">
+  </a>
+  <figcaption><span class="mono">09 / Details</span><strong>Liquid gold</strong></figcaption>
+</figure></div>
+  </div>
+</section>
+<section class="studio-wrap" id="contact" aria-labelledby="wrap-title">
+  <div class="site-frame wrap-inner">
+    <div><p class="mono eyebrow"><span></span> End of session</p><h2 id="wrap-title">THAT’S A<br><em>WRAP.</em></h2><p>Have something in mind? Let’s talk.</p></div>
+    <div class="wrap-prop"><img src="../../assets/cinema-reel.svg" width="220" height="220" alt="" loading="lazy">
+      <button type="button" class="clapper" data-clapper aria-label="Try the clapper demonstration"><span aria-hidden="true" class="clapper-strip"></span><span class="clapper-face"><span class="mono">CLAPPER DEMO</span><strong>CUT</strong><span class="mono" data-take>TAKE 01</span></span></button>
+      <p class="sr-only" aria-live="polite" data-clap-status></p>
+    </div>
+    <address class="studio-contacts"><a href="mailto:tariqbarqawi71@gmail.com" class="contact-link"><strong>Email</strong><span>tariqbarqawi71@gmail.com</span></a>
+<a href="https://wa.me/97333302904" class="contact-link"><strong>WhatsApp</strong><span>Message on WhatsApp</span></a>
+<a href="https://www.instagram.com/tarix.mov/" class="contact-link"><strong>Instagram</strong><span>@tarix.mov</span></a>
+<a href="tel:+97333302904" class="contact-link"><strong>Phone</strong><span>+973 3330 2904</span></a></address>
+    <footer class="end-note mono"><span>TAREQ ALBARQAWI · BAHRAIN</span><a href="index.html">Back to concept review</a></footer>
+  </div>
+</section>
+</main>
+
+<dialog class="review-dialog" id="review-dialog" aria-labelledby="dialog-title">
+  <header class="dialog-bar"><p class="mono" id="dialog-kicker">Portfolio preview</p><button type="button" class="icon-button" data-close>Close</button></header>
+  <div class="dialog-body" id="dialog-body"></div>
+</dialog>
+<script type="application/json" id="films">{"showreel":{"title":"Showreel 2026","role":"3D Animation / Motion Design / Live Action","description":"A single pass through the work: 3D environments, motion design, live-action grading and the seams where they meet.","ratio":"9:16","poster":"../../assets/showreel-CYh5Zr_7LJ8.webp","category":"Showreel","watch":"https://www.youtube.com/shorts/CYh5Zr_7LJ8?feature=share","linkKind":"YouTube reference"},"playthings":{"title":"Playthings","role":"Solo Creator - 3D Animation","description":"An independent 3D animated short focusing on suspense and stylized storytelling.","ratio":"16:9","poster":"../../assets/playthings-hDDDlkD6jYc.webp","category":"Animation","watch":"https://www.youtube.com/watch?v=hDDDlkD6jYc","linkKind":"YouTube preview"},"a-quiet-trail":{"title":"A Quiet Trail","role":"Director","description":"A live-action Bahraini adaptation inspired by Little Red Riding Hood, emphasizing atmospheric tension and visual storytelling.","ratio":"16:9","poster":"../../assets/a-quiet-trail-w04hOwvVkdc.webp","category":"Short film","watch":"https://www.youtube.com/watch?v=w04hOwvVkdc","linkKind":"YouTube reference","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,12.75,25.5,38.291667,51.041667,63.791667,76.541667,89.291667,102.083333,114.833333,127.583333,140.333333,153.083333,165.833333,178.625,191.375,204.125,216.875,229.625,242.416667,255.166667,267.916667,280.666667,293.416667,306.166667,318.958333,331.708333,344.458333,357.208333,369.958333,382.75,395.5,408.25],"duration":408.291667,"frameWidth":640,"frameHeight":360,"sheet":"../../assets/video-previews/a-quiet-trail.webp"}},"elham":{"title":"Elham","role":"Editor & Assistant Cinematographer","description":"A documentary biopic detailing a Bahraini artist's journey from art school to becoming an art educator.","ratio":"16:9","poster":"../../assets/elham-3bs6WSHtgNQ.webp","category":"Documentary","watch":"https://www.youtube.com/watch?v=3bs6WSHtgNQ","linkKind":"YouTube reference","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,22.288933,44.577867,66.8668,89.155733,111.4113,133.700233,155.989167,178.2781,200.567033,222.855967,245.1449,267.400467,289.6894,311.978333,334.267267,356.5562,378.845133,401.134067,423.423,445.711933,467.9675,490.256433,512.545367,534.8343,557.123233,579.412167,601.7011,623.956667,646.2456,668.534533,690.823467,713.1124],"duration":713.145767,"frameWidth":640,"frameHeight":360,"sheet":"../../assets/video-previews/elham.webp"}},"vision-types":{"title":"Vision Types Simulation","role":"3D & Motion Designer","description":"Highly realistic simulation of optical vision impairments combining Blender and After Effects.","ratio":"9:16","poster":"../../assets/vision-types-JmTyY6GTCEQ.webp","category":"Motion design","watch":"https://www.youtube.com/watch?v=JmTyY6GTCEQ","linkKind":"YouTube reference","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,0.566667,1.133333,1.7,2.266667,2.833333,3.4,3.966667,4.533333,5.066667,5.633333,6.2,6.766667,7.333333,7.9,8.466667,9.033333,9.6,10.166667,10.733333,11.3,11.866667,12.433333,13.0,13.533333,14.1,14.666667,15.233333,15.8,16.366667,16.933333,17.5,18.066667],"duration":18.1,"frameWidth":270,"frameHeight":480,"sheet":"../../assets/video-previews/vision-types.webp"}},"acuity":{"title":"Acuity Comparison","role":"3D & Motion Designer","description":"A split-screen technical visualization comparing optical conditions side-by-side.","ratio":"9:16","poster":"../../assets/acuity-rgeq3qAihJA.webp","category":"Motion design","watch":"https://www.youtube.com/watch?v=rgeq3qAihJA","linkKind":"YouTube reference","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,0.8,1.6,2.433333,3.233333,4.033333,4.866667,5.666667,6.466667,7.266667,8.066667,8.9,9.7,10.5,11.333333,12.133333,12.933333,13.733333,14.533333,15.366667,16.166667,16.966667,17.8,18.6,19.4,20.2,21.0,21.833333,22.633333,23.433333,24.266667,25.066667,25.866667],"duration":25.9,"frameWidth":270,"frameHeight":480,"sheet":"../../assets/video-previews/acuity.webp"}},"vfx":{"title":"VFX & 3D Integration","role":"VFX Artist","description":"Integrating 3D models into real-world live-action footage for dynamic visual effects.","ratio":"9:16","poster":"../../assets/vfx-kDgd1eqAqTs.webp","category":"VFX","watch":"https://www.youtube.com/watch?v=kDgd1eqAqTs","linkKind":"YouTube reference","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,1.1,2.2,3.3,4.4,5.5,6.566667,7.666667,8.766667,9.866667,10.966667,12.066667,13.166667,14.266667,15.366667,16.466667,17.533333,18.633333,19.733333,20.833333,21.933333,23.033333,24.133333,25.233333,26.333333,27.433333,28.533333,29.6,30.7,31.8,32.9,34.0,35.1],"duration":35.133333,"frameWidth":270,"frameHeight":480,"sheet":"../../assets/video-previews/vfx.webp"}},"social-campaigns":{"title":"Social Campaigns","role":"Videographer & Editor","description":"High-end commercial videography tailored for engaging brand marketing campaigns.","ratio":"9:16","poster":"../../assets/social-campaigns-flJJizkurxQ.webp","category":"Commercial","watch":"https://www.youtube.com/watch?v=flJJizkurxQ","linkKind":"YouTube reference","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,2.48,4.96,7.48,9.96,12.44,14.96,17.44,19.92,22.4,24.88,27.4,29.88,32.36,34.88,37.36,39.84,42.32,44.8,47.32,49.8,52.28,54.8,57.28,59.76,62.24,64.72,67.24,69.72,72.2,74.72,77.2,79.68],"duration":79.72,"frameWidth":270,"frameHeight":480,"sheet":"../../assets/video-previews/social-campaigns.webp"}},"deer-scene":{"title":"Deer Scene","role":"3D Artist","description":"An idling deer in an atmospheric Blender environment, exploring lighting and mood.","ratio":"16:9","poster":"media/deer-frame.webp","category":"3D environment","watch":null,"linkKind":"YouTube reference","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,0.458333,0.875,1.333333,1.791667,2.208333,2.666667,3.125,3.541667,4.0,4.458333,4.875,5.333333,5.791667,6.208333,6.666667,7.083333,7.541667,8.0,8.416667,8.875,9.333333,9.75,10.208333,10.666667,11.083333,11.541667,12.0,12.416667,12.875,13.333333,13.75,14.208333],"duration":14.25,"frameWidth":640,"frameHeight":360,"sheet":"../../assets/video-previews/deer-scene.webp"}}}</script>
+<script defer src="prototype.js"></script>
+</body>
+</html>
