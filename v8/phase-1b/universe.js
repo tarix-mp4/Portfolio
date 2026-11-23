@@ -792,7 +792,11 @@
       if(userInitiated){tourTo('.exhibition');cuePeek.focus({preventScroll:true});}
     }else if(mode==='contacts'&&userInitiated){tourTo('#contact-cues');colorButton.focus({preventScroll:true});}
   }
-  if(reviewMode==='geralt')reviewJump('geralt');
+  // Query state survives the private sign-in redirect; a URL fragment alone may not.
+  if(reviewMode==='geralt'||reviewMode==='contacts'){
+    reviewJump(reviewMode);
+    if(!location.hash)requestAnimationFrame(()=>tourTo(reviewMode==='geralt'?'[data-review-peek]':'#contact-cues',false));
+  }
   $$('[data-review-open]').forEach(link=>link.addEventListener('click',e=>{
     if(!reviewDialog.showModal)return;
     e.preventDefault();stopTour();stopColorPass();reviewDialog.showModal();refreshPeek();

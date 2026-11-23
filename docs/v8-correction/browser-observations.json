@@ -1,0 +1,400 @@
+{
+  "stage": {
+    "idleStart": {
+      "draws": 10,
+      "renderer": "software",
+      "shown": "visible",
+      "width": 1363,
+      "yaw": "0.000"
+    },
+    "idleEnd": {
+      "draws": 10,
+      "renderer": "software",
+      "shown": "visible",
+      "width": 1363,
+      "yaw": "0.000"
+    },
+    "blender": "KIT / BLENDER ROLL",
+    "afterEffects": "KIT / AFTER EFFECTS FLIP",
+    "flash": "LENS / FRAME EXPOSED",
+    "adjusted": {
+      "draws": 20,
+      "renderer": "software",
+      "shown": "visible",
+      "width": 1363,
+      "yaw": "0.231"
+    }
+  },
+  "foundText": "YOU FOUND GERALT!",
+  "geraltClip": {
+    "frames": 104,
+    "lastMs": 4906
+  },
+  "dock": [
+    {
+      "body": true,
+      "bottom": 5.59375,
+      "layers": [
+        [
+          "box-back",
+          1024,
+          "0"
+        ],
+        [
+          "box-cat",
+          1254,
+          "1"
+        ],
+        [
+          "box-front",
+          1024,
+          "3"
+        ]
+      ],
+      "position": "fixed",
+      "right": 8.625,
+      "y": 2627
+    },
+    {
+      "body": true,
+      "bottom": 5.59375,
+      "layers": [
+        [
+          "box-back",
+          1024,
+          "0"
+        ],
+        [
+          "box-cat",
+          1254,
+          "1"
+        ],
+        [
+          "box-front",
+          1024,
+          "3"
+        ]
+      ],
+      "position": "fixed",
+      "right": 8.625,
+      "y": 874
+    },
+    {
+      "body": true,
+      "bottom": 5.59375,
+      "layers": [
+        [
+          "box-back",
+          1024,
+          "0"
+        ],
+        [
+          "box-cat",
+          1254,
+          "1"
+        ],
+        [
+          "box-front",
+          1024,
+          "3"
+        ]
+      ],
+      "position": "fixed",
+      "right": 8.625,
+      "y": 4160
+    }
+  ],
+  "elham": {
+    "time": "11:53.11",
+    "thumb": "url(\"/assets/video-previews/elham.webp\")",
+    "video": {
+      "h": 720,
+      "paused": false,
+      "ready": 4,
+      "t": 0.13575,
+      "url": "https://tarix-portfolio.netlify.app/assets/videos/elham.mp4",
+      "w": 1280
+    }
+  },
+  "portrait": {
+    "h": 1280,
+    "paused": false,
+    "ready": 4,
+    "t": 0.271018,
+    "url": "https://tarix-portfolio.netlify.app/assets/videos/vision-types.mp4",
+    "w": 720
+  },
+  "hover": {
+    "instagram": {
+      "a": {
+        "bloom": 0.00600419,
+        "opacity": 0.0067222,
+        "pointer": true,
+        "position": "matrix(1.01946, 0, 0, 1.01946, -36.7329, 15.7287)"
+      },
+      "b": {
+        "bloom": 0.665342,
+        "opacity": 0.828077,
+        "pointer": true,
+        "position": "matrix(1.11103, 0, 0, 1.11103, -3.27575, 1.40265)"
+      },
+      "d": {
+        "bloom": 0.759686,
+        "opacity": 0.992411,
+        "pointer": true,
+        "position": "matrix(1.11862, 0, 0, 1.11862, -0.502644, 0.215228)"
+      },
+      "out": {
+        "bloom": 0.511725,
+        "opacity": 0.627493,
+        "pointer": false,
+        "position": "matrix(1.02833, 0, 0, 1.02833, -33.4914, 14.3407)"
+      },
+      "end": {
+        "bloom": 0.034206,
+        "opacity": 0.0545617,
+        "pointer": false,
+        "position": "matrix(1.00376, 0, 0, 1.00376, -42.4668, 18.1839)"
+      }
+    },
+    "whatsapp": {
+      "a": {
+        "bloom": 0.00610539,
+        "opacity": 0.00813253,
+        "pointer": true,
+        "position": "matrix(1.08066, 0, 0, 1.08066, -14.3726, 6.15402)"
+      },
+      "b": {
+        "bloom": 0.700475,
+        "opacity": 0.9243,
+        "pointer": true,
+        "position": "matrix(1.11983, 0, 0, 1.11983, -0.0605068, 0.0259076)"
+      },
+      "d": {
+        "bloom": 0.76,
+        "opacity": 1,
+        "pointer": true,
+        "position": "matrix(1.12, 0, 0, 1.12, 0, 0)"
+      },
+      "out": {
+        "bloom": 0.210348,
+        "opacity": 0.272025,
+        "pointer": false,
+        "position": "matrix(1.01603, 0, 0, 1.01603, -37.9864, 16.2649)"
+      },
+      "end": {
+        "bloom": 0.00109405,
+        "opacity": 0.00108212,
+        "pointer": false,
+        "position": "matrix(1.0016, 0, 0, 1.0016, -43.2583, 18.5222)"
+      }
+    },
+    "email": {
+      "a": {
+        "bloom": 0.0344999,
+        "opacity": 0.0441025,
+        "pointer": true,
+        "position": "matrix(1.04567, 0, 0, 1.04567, -27.1564, 11.6282)"
+      },
+      "b": {
+        "bloom": 0.700648,
+        "opacity": 0.9166,
+        "pointer": true,
+        "position": "matrix(1.11336, 0, 0, 1.11336, -2.42501, 1.03837)"
+      },
+      "d": {
+        "bloom": 0.76,
+        "opacity": 1,
+        "pointer": true,
+        "position": "matrix(1.11943, 0, 0, 1.11943, -0.206563, 0.0884487)"
+      },
+      "out": {
+        "bloom": 0.595983,
+        "opacity": 0.791065,
+        "pointer": false,
+        "position": "matrix(1.03512, 0, 0, 1.03512, -31.0096, 13.2781)"
+      },
+      "end": {
+        "bloom": 0.0278436,
+        "opacity": 0.0403736,
+        "pointer": false,
+        "position": "matrix(1.00344, 0, 0, 1.00344, -42.5842, 18.2342)"
+      }
+    },
+    "phone": {
+      "a": {
+        "bloom": 0,
+        "opacity": 0,
+        "pointer": false,
+        "position": "matrix(1, 0, 0, 1, -43.8422, 18.7722)"
+      },
+      "b": {
+        "bloom": 0,
+        "opacity": 0,
+        "pointer": false,
+        "position": "matrix(1, 0, 0, 1, -43.8422, 18.7722)"
+      },
+      "d": {
+        "bloom": 0,
+        "opacity": 0,
+        "pointer": false,
+        "position": "matrix(1, 0, 0, 1, -43.8422, 18.7722)"
+      },
+      "out": {
+        "bloom": 0,
+        "opacity": 0,
+        "pointer": false,
+        "position": "matrix(1, 0, 0, 1, -43.8422, 18.7722)"
+      },
+      "end": {
+        "bloom": 0,
+        "opacity": 0,
+        "pointer": false,
+        "position": "matrix(1, 0, 0, 1, -43.8422, 18.7722)"
+      }
+    }
+  },
+  "widths": {
+    "320": {
+      "films": 8,
+      "layout": 305,
+      "photos": 9,
+      "scroll": 305,
+      "viewport": 320
+    },
+    "375": {
+      "films": 8,
+      "layout": 360,
+      "photos": 9,
+      "scroll": 360,
+      "viewport": 375
+    },
+    "390": {
+      "films": 8,
+      "layout": 375,
+      "photos": 9,
+      "scroll": 375,
+      "viewport": 390
+    },
+    "430": {
+      "films": 8,
+      "layout": 415,
+      "photos": 9,
+      "scroll": 415,
+      "viewport": 430
+    },
+    "768": {
+      "films": 8,
+      "layout": 753,
+      "photos": 9,
+      "scroll": 753,
+      "viewport": 768
+    },
+    "1280": {
+      "films": 8,
+      "layout": 1265,
+      "photos": 9,
+      "scroll": 1265,
+      "viewport": 1280
+    }
+  },
+  "mobileReel": {
+    "h": 768,
+    "paused": false,
+    "ready": 4,
+    "t": 0.116343,
+    "url": "/v8/correction/media/reel-review.webm",
+    "w": 432
+  },
+  "photo": "Blue hour, indoors",
+  "photoViewer": "Liquid gold",
+  "mobileDock": [
+    {
+      "b": 5.59375,
+      "position": "fixed",
+      "scroll": 2537,
+      "x": 267.984375
+    },
+    {
+      "b": 5.59375,
+      "position": "fixed",
+      "scroll": 958,
+      "x": 267.984375
+    },
+    {
+      "b": 5.59375,
+      "position": "fixed",
+      "scroll": 4403,
+      "x": 267.984375
+    }
+  ],
+  "mobileScrub": "06:48.25",
+  "finale": {
+    "before": "Clap the slate, scene 01 take 01",
+    "after": "Clap the slate, Scene 01 \u00b7 Take 02",
+    "cue": "SLATE SET / 01:02"
+  },
+  "reduced": {
+    "instagramDuration": "1e-05s",
+    "paused": true
+  },
+  "contactCrop": {
+    "top": 645,
+    "bottom": 777
+  },
+  "hoversRecording": {
+    "frames": 230,
+    "lastMs": 10410
+  },
+  "contactFocus": {
+    "focus": true,
+    "href": "https://www.instagram.com/tarix.mov/"
+  },
+  "v7": {
+    "range": {
+      "title": "Preview frames from A Quiet Trail",
+      "value": "32"
+    },
+    "sheet": "false",
+    "slateBefore": "Snap the clapperboard. Scene 01, take 01.",
+    "instagram": 1
+  },
+  "performance": {
+    "path": "software",
+    "pointerSamples": [
+      5.2,
+      6,
+      4.1,
+      4.2,
+      5.3,
+      4.6,
+      4.5,
+      4,
+      4.3,
+      3.3,
+      4.7,
+      3.5,
+      3.8,
+      4.2,
+      3.9,
+      4,
+      4.3,
+      4.1
+    ],
+    "draws": 19,
+    "offscreen": [
+      21,
+      21
+    ]
+  },
+  "archive": {
+    "sample": "00:35.10",
+    "label": "FRAME / 33",
+    "nav": ""
+  },
+  "directGeralt": {
+    "reachable": true,
+    "scroll": 2646
+  },
+  "siteConsole": []
+}
