@@ -1,0 +1,14 @@
+/* Stage 1: fit the native player inside the unchanged V6 screening room. */
+.video-mount > video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #05050b;
+}
+.video-mount > video:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 2px;
+}

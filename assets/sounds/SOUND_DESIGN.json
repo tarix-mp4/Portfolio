@@ -1,0 +1,89 @@
+{
+  "source": "Original synthesized equipment sounds, created specifically for this portfolio; no third-party recordings.",
+  "continuous_audio": false,
+  "default_preference": "on; no autoplay; first eligible deliberate gesture unlocks one context",
+  "master_gain": 0.65,
+  "maximum_concurrent_voices": 4,
+  "sounds": [
+    {
+      "file": "shutter.wav",
+      "duration_seconds": 0.18,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak_dbfs": -8.18,
+      "rms_dbfs": -22.23,
+      "description": "Two-stage camera mirror and shutter release",
+      "sha256": "4f064bd69ffb0c572cfcd82cea3af22b69e705715277179284ec1b33a7236662"
+    },
+    {
+      "file": "spin.wav",
+      "duration_seconds": 0.39,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak_dbfs": -11.37,
+      "rms_dbfs": -24.4,
+      "description": "Soft geared emblem rotation with a settled mechanical stop",
+      "sha256": "57766e7f6f4c7b723e27b6631789bf4725a27c0a301c92049b46bff5514e8bd9"
+    },
+    {
+      "file": "interface.wav",
+      "duration_seconds": 0.14,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak_dbfs": -13.98,
+      "rms_dbfs": -31.66,
+      "description": "A short, damped studio control switch",
+      "sha256": "b0b1235750486160c5d33c4dfba20494a3e1e99034c68e2a9c83c53cffb4cdde"
+    },
+    {
+      "file": "clap.wav",
+      "duration_seconds": 0.21,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak_dbfs": -5.68,
+      "rms_dbfs": -23.37,
+      "description": "Wooden slate impact with a short body resonance",
+      "sha256": "a793775bea5b646ac7e3e25417505888cc02964bf6304a94f58ccaf63283bc82"
+    },
+    {
+      "file": "reel.wav",
+      "duration_seconds": 0.46,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak_dbfs": -13.15,
+      "rms_dbfs": -28.08,
+      "description": "Restrained film transport and spool clicks",
+      "sha256": "0e714b238e8afa1b10d670cebd552967577eba790a356cd20b4314e7730d8939"
+    },
+    {
+      "file": "ui.wav",
+      "duration_seconds": 0.1,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak_dbfs": -13.56,
+      "rms_dbfs": -28.95,
+      "description": "A muted tactile production control",
+      "sha256": "766632be0ea5097da41c3798f90fc46190253eb3f98ee7980cf3678ab091f9bb"
+    },
+    {
+      "file": "monitor.wav",
+      "duration_seconds": 0.31,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak_dbfs": -9.9,
+      "rms_dbfs": -22.49,
+      "description": "A soft monitor engagement and air movement",
+      "sha256": "bd697ae54629e91c9c4e3b84a3232c8c4475297725055a14393146e6d6ef2ba0"
+    },
+    {
+      "file": "focus.wav",
+      "duration_seconds": 0.17,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak_dbfs": -12.4,
+      "rms_dbfs": -27.9,
+      "description": "A short focus motor and a damped stop",
+      "sha256": "f8d3dd9f1ce6578f268a6453af52888014ac4526a0e546effd150a2dac650d8b"
+    }
+  ]
+}

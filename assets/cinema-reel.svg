@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eee1c3"/><stop offset=".24" stop-color="#bba075"/><stop offset=".48" stop-color="#e6d6b3"/><stop offset=".68" stop-color="#75644b"/><stop offset="1" stop-color="#cfbc92"/></linearGradient>
+    <radialGradient id="hub"><stop stop-color="#aca797"/><stop offset=".55" stop-color="#2b2c30"/><stop offset=".62" stop-color="#b7aa8d"/><stop offset=".8" stop-color="#343437"/><stop offset="1" stop-color="#bdae90"/></radialGradient>
+    <mask id="holes"><rect width="600" height="600" fill="white"/><g fill="black"><circle cx="300" cy="161" r="65"/><circle cx="432.2" cy="257" r="65"/><circle cx="381.7" cy="412.4" r="65"/><circle cx="218.3" cy="412.4" r="65"/><circle cx="167.8" cy="257" r="65"/><circle cx="300" cy="300" r="25"/></g></mask>
+  </defs>
+  <g mask="url(#holes)"><circle cx="300" cy="300" r="278" fill="url(#metal)" stroke="#e5d6b3" stroke-width="4"/><circle cx="300" cy="300" r="266" fill="none" stroke="#605644" stroke-width="2"/><circle cx="300" cy="300" r="259" fill="none" stroke="#d7c8a2" stroke-width="1"/><circle cx="300" cy="300" r="70" fill="url(#hub)" stroke="#e0d1ab" stroke-width="3"/>
+  <g fill="none" stroke="#776b54" stroke-width="3"><circle cx="300" cy="161" r="67"/><circle cx="432.2" cy="257" r="67"/><circle cx="381.7" cy="412.4" r="67"/><circle cx="218.3" cy="412.4" r="67"/><circle cx="167.8" cy="257" r="67"/></g>
+  <g fill="#57554e" stroke="#dbd0b6" stroke-width="2"><circle cx="300" cy="251" r="7"/><circle cx="346.6" cy="284.9" r="7"/><circle cx="328.8" cy="339.6" r="7"/><circle cx="271.2" cy="339.6" r="7"/><circle cx="253.4" cy="284.9" r="7"/></g>
+  <text x="300" y="70" text-anchor="middle" font-family="monospace" font-size="13" letter-spacing="4" fill="#5b5241">TARIX / 35 MM</text></g>
+</svg>

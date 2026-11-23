@@ -1,0 +1,75 @@
+[
+  {
+    "key": "playthings",
+    "id": "hDDDlkD6jYc",
+    "source": "https://img.youtube.com/vi/hDDDlkD6jYc/maxresdefault.jpg",
+    "size": [
+      1280,
+      720
+    ]
+  },
+  {
+    "key": "a-quiet-trail",
+    "id": "w04hOwvVkdc",
+    "source": "https://img.youtube.com/vi/w04hOwvVkdc/maxresdefault.jpg",
+    "size": [
+      1280,
+      720
+    ]
+  },
+  {
+    "key": "elham",
+    "id": "3bs6WSHtgNQ",
+    "source": "https://img.youtube.com/vi/3bs6WSHtgNQ/maxresdefault.jpg",
+    "size": [
+      1280,
+      720
+    ]
+  },
+  {
+    "key": "vision-types",
+    "id": "JmTyY6GTCEQ",
+    "source": "https://img.youtube.com/vi/JmTyY6GTCEQ/maxresdefault.jpg",
+    "size": [
+      405,
+      720
+    ]
+  },
+  {
+    "key": "acuity",
+    "id": "rgeq3qAihJA",
+    "source": "https://img.youtube.com/vi/rgeq3qAihJA/maxresdefault.jpg",
+    "size": [
+      405,
+      720
+    ]
+  },
+  {
+    "key": "vfx",
+    "id": "kDgd1eqAqTs",
+    "source": "https://img.youtube.com/vi/kDgd1eqAqTs/maxresdefault.jpg",
+    "size": [
+      405,
+      720
+    ]
+  },
+  {
+    "key": "social-campaigns",
+    "id": "flJJizkurxQ",
+    "source": "https://img.youtube.com/vi/flJJizkurxQ/maxresdefault.jpg",
+    "size": [
+      405,
+      720
+    ]
+  },
+  {
+    "key": "showreel",
+    "id": "CYh5Zr_7LJ8",
+    "source": "https://img.youtube.com/vi/CYh5Zr_7LJ8/maxresdefault.jpg",
+    "size": [
+      405,
+      720
+    ],
+    "note": "Center portrait image; removes only duplicated sidebars from the YouTube thumbnail."
+  }
+]

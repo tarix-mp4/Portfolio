@@ -1,0 +1,311 @@
+{
+  "note": "All nine supplied PNG files are preserved byte-for-byte. Reference names identify the corresponding photographs described in the brief; camera-original DSC files were not attached. Derivatives use original color/composition with no crop, recoloring or upscaling.",
+  "photographs": [
+    {
+      "index": 0,
+      "number": "01",
+      "title": "Into the heat",
+      "category": "Culinary",
+      "alt": "Preparation beside a dramatic flame-lit oven.",
+      "palette": "amber",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134043).png",
+      "source_name": "image(20261012-134043).png",
+      "reference_name": "DSC01865.png",
+      "source_sha256": "cd9145ca2429c0a0b7116c9e75ff7834d49ed100990ae010da8a65468272ee77",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-01-480.webp",
+          "bytes": 34096
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-01-960.webp",
+          "bytes": 87402
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-01-1367.webp",
+          "bytes": 143396
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "number": "02",
+      "title": "A matter of focus",
+      "category": "Culinary",
+      "alt": "Close-up of food being prepared, with a shallow depth of field.",
+      "palette": "amber",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134053).png",
+      "source_name": "image(20261012-134053).png",
+      "reference_name": "DSC01901.png",
+      "source_sha256": "4b20c66a8359225c6d80287b8768488af74cf555d02243ad345d1e9833bc4d89",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-02-480.webp",
+          "bytes": 29814
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-02-960.webp",
+          "bytes": 73748
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-02-1367.webp",
+          "bytes": 123746
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "number": "03",
+      "title": "Oven light",
+      "category": "Culinary",
+      "alt": "Freshly baked food beside the warm glow of an oven.",
+      "palette": "amber",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134101).png",
+      "source_name": "image(20261012-134101).png",
+      "reference_name": "DSC01878.png",
+      "source_sha256": "d7a13f79aa503f37864a97d4f970cf6a92590cddb397b0fec2f2b31cf1d768f0",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-03-480.webp",
+          "bytes": 39512
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-03-960.webp",
+          "bytes": 98408
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-03-1367.webp",
+          "bytes": 155908
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "number": "04",
+      "title": "After the fire",
+      "category": "Performance",
+      "alt": "A fire performer surrounded by dramatic red and orange light.",
+      "palette": "fire",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134113).png",
+      "source_name": "image(20261012-134113).png",
+      "reference_name": "DSC02342.JPG",
+      "source_sha256": "5110b80b3c069d502892bf8c070449c4f924a2ec84f779e1ee66966ffda6862f",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-04-480.webp",
+          "bytes": 32170
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-04-960.webp",
+          "bytes": 83080
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-04-1367.webp",
+          "bytes": 132700
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "number": "05",
+      "title": "The night has a rhythm",
+      "category": "Nightlife",
+      "alt": "A DJ wearing headphones in atmospheric nightlife lighting.",
+      "palette": "indigo",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134125).png",
+      "source_name": "image(20261012-134125).png",
+      "reference_name": "DSC02320.JPG",
+      "source_sha256": "0a4659b83d4b1fe7e3b98c20ff8c2b8dd9932007a00b3da2b6de8f5ab091f51c",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-05-480.webp",
+          "bytes": 42510
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-05-960.webp",
+          "bytes": 121732
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-05-1367.webp",
+          "bytes": 213248
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "number": "06",
+      "title": "A place in the dark",
+      "category": "Atmosphere",
+      "alt": "A reserved table illuminated by a warm pool of light.",
+      "palette": "amber",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134209).png",
+      "source_name": "image(20261012-134209).png",
+      "reference_name": "DSC02319.JPG",
+      "source_sha256": "c61c1a5a943a50e994c14af052f63e3eac24c8d25c5dbc9ccc336a5e39880544",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-06-480.webp",
+          "bytes": 18668
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-06-960.webp",
+          "bytes": 50134
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-06-1367.webp",
+          "bytes": 86822
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "number": "07",
+      "title": "Between pours",
+      "category": "People & craft",
+      "alt": "A bartender preparing a beverage in a warmly lit bar.",
+      "palette": "amber",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134217).png",
+      "source_name": "image(20261012-134217).png",
+      "reference_name": "DSC02535.JPG",
+      "source_sha256": "63b6f985a133acb132d0c5a71b24e19a9bca08dc8f1d637759afae2a6d823629",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-07-480.webp",
+          "bytes": 49816
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-07-960.webp",
+          "bytes": 118772
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-07-1367.webp",
+          "bytes": 184486
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "number": "08",
+      "title": "Blue hour, indoors",
+      "category": "Interiors",
+      "alt": "A moody lounge interior with blue and purple lighting.",
+      "palette": "indigo",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134225).png",
+      "source_name": "image(20261012-134225).png",
+      "reference_name": "DSC02051.JPG",
+      "source_sha256": "99400b0b7bd9f42f3a31c7b19fbbae10174c96485e9329e4c70cc29e403800f0",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-08-480.webp",
+          "bytes": 44196
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-08-960.webp",
+          "bytes": 105940
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-08-1367.webp",
+          "bytes": 170106
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "number": "09",
+      "title": "Liquid gold",
+      "category": "Details",
+      "alt": "Bottles arranged on shelves illuminated by dramatic gold lighting.",
+      "palette": "amber",
+      "width": 1367,
+      "height": 2048,
+      "original": "assets/photography/originals/image(20261012-134422).png",
+      "source_name": "image(20261012-134422).png",
+      "reference_name": "DSC02049.JPG",
+      "source_sha256": "3e0dfe181754de9a05bfbffdb22126683953856d2f93858186ff5a31b174948b",
+      "variants": [
+        {
+          "width": 480,
+          "height": 719,
+          "src": "assets/photography/frame-09-480.webp",
+          "bytes": 41490
+        },
+        {
+          "width": 960,
+          "height": 1438,
+          "src": "assets/photography/frame-09-960.webp",
+          "bytes": 111712
+        },
+        {
+          "width": 1367,
+          "height": 2048,
+          "src": "assets/photography/frame-09-1367.webp",
+          "bytes": 190950
+        }
+      ]
+    }
+  ]
+}

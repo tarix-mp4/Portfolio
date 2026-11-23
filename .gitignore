@@ -1,0 +1,36 @@
+# Local video originals and delivery archives
+*.[mM][pP]4
+*.[mM][oO][vV]
+*.[mM]4[vV]
+*.[zZ][iI][pP]
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Local credentials and deployment state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.netlify/
+
+# Local build, tooling, and test output
+node_modules/
+dist/
+build/
+.cache/
+__pycache__/
+*.pyc
+*.log
+/verification/
+/playwright-report/
+/test-results/
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,92 @@
+/* V5 polish only. V4 typography, composition, rigs and layouts stay intact. */
+
+/* The burst is a child of the actual hot-shoe flash, so its origin follows
+   the same perspective and rotation. Static gradients animate only opacity. */
+.camera-strobe .camera-flash {
+  left: 50%; top: 50%; width: calc(var(--prop-size) * 1.65);
+  height: calc(var(--prop-size) * 1.65);
+  transform: translate3d(-50%,-50%,8px);
+  background: radial-gradient(ellipse, #fff 0% 3%, #fffef6cc 7%, #d9e8ff50 18%, #fff0d218 34%, transparent 66%);
+}
+.camera-flash::after {
+  content: ''; position: absolute; left: 12%; right: 12%; top: 50%; height: 1px;
+  background: linear-gradient(90deg,transparent,#eff7ff55 25%,#fff 50%,#eff7ff55 75%,transparent);
+}
+.camera-rig.is-flashing .camera-flash { animation: v5-flash-burst .44s ease-out both; }
+.strobe-light { background: #fff; box-shadow: 0 0 8px 3px #fffffff2, 0 0 24px 7px #d9e8ff66; }
+.camera-rig.is-flashing .strobe-light { animation: v5-flash-unit .36s ease-out both; }
+.camera-body::after {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(ellipse at 50% -8%,#eaf4ff77, #eaf4ff18 38%,transparent 78%);
+  opacity: 0;
+}
+.camera-rig.is-flashing .camera-body::after { animation: v5-flash-spill .46s ease-out both; }
+@keyframes v5-flash-burst { 0%, 4% { opacity: 1; } 18% { opacity: .58; } 46% { opacity: .14; } 100% { opacity: 0; } }
+@keyframes v5-flash-unit { 0%, 7% { opacity: 1; } 30% { opacity: .3; } 100% { opacity: 0; } }
+@keyframes v5-flash-spill { 0% { opacity: .9; } 20% { opacity: .35; } 100% { opacity: 0; } }
+html.motion-paused .camera-body::after,
+html.page-hidden .camera-body::after,
+html.screening .camera-body::after { animation: none !important; opacity: 0; }
+
+/* A separate paint layer crossfades the brand colors. It never changes the
+   card's dimensions or the existing JS tilt transform. Deeper tones under
+   the content keep a light foreground readable throughout the transition. */
+.contact-card--whatsapp, .contact-card--instagram { isolation: isolate; }
+.contact-card--whatsapp::before, .contact-card--instagram::before {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  opacity: 0; transition: opacity .65s cubic-bezier(.22,1,.36,1);
+}
+.contact-card--whatsapp::before {
+  background: radial-gradient(ellipse at 105% -15%,#25d36699,transparent 60%),
+    linear-gradient(140deg,#087c44,#08673b 60%,#05502f);
+}
+.contact-card--instagram::before {
+  background: linear-gradient(0deg,#10061d4d,#0e052329),
+    radial-gradient(ellipse at -10% -20%,#273feab3,transparent 65%),
+    radial-gradient(ellipse at 105% 110%,#ffcf65 0%,#ff9245 24%,transparent 63%),
+    radial-gradient(ellipse at -10% 105%,#ff523c 0%,#e32973 48%,transparent 82%),
+    linear-gradient(135deg,#3230a1,#832ec3 42%,#d52385 72%,#fa6e42);
+}
+.contact-card--whatsapp > *, .contact-card--instagram > * { position: relative; z-index: 1; }
+.contact-card--whatsapp .contact-card-top,
+.contact-card--whatsapp .contact-card-top > span:last-child,
+.contact-card--whatsapp .contact-card-icon,
+.contact-card--whatsapp .contact-card-detail,
+.contact-card--instagram .contact-card-top,
+.contact-card--instagram .contact-card-top > span:last-child,
+.contact-card--instagram .contact-card-icon,
+.contact-card--instagram .contact-card-detail { transition: color .24s ease, border-color .4s ease, transform .35s var(--ease); }
+.contact-card--whatsapp .whatsapp-brand { fill: currentColor; stroke: none; }
+.contact-card--whatsapp:focus-visible, .contact-card--instagram:focus-visible { outline: 2px solid #f4eee3; outline-offset: 4px; }
+
+.contact-card--whatsapp:is(:focus-visible,:active,.is-pressed)::before,
+.contact-card--instagram:is(:focus-visible,:active,.is-pressed)::before { opacity: 1; }
+.contact-card--whatsapp:is(:focus-visible,:active,.is-pressed),
+.contact-card--instagram:is(:focus-visible,:active,.is-pressed) { color: #fff; border-color: #ffffff70; }
+.contact-card--whatsapp:is(:focus-visible,:active,.is-pressed) :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail),
+.contact-card--instagram:is(:focus-visible,:active,.is-pressed) :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail) { color: #fff; border-color: #ffffff80; }
+
+@media (hover: hover) and (pointer: fine) {
+  .contact-card--whatsapp:hover::before, .contact-card--instagram:hover::before { opacity: 1; }
+  .contact-card--whatsapp:hover, .contact-card--instagram:hover { color: #fff; border-color: #ffffff70; }
+  .contact-card--whatsapp:hover :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail),
+  .contact-card--instagram:hover :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail) { color: #fff; border-color: #ffffff80; }
+}
+@media (hover: none), (pointer: coarse) {
+  .contact-card--whatsapp:is(:active,.is-pressed)::before, .contact-card--instagram:is(:active,.is-pressed)::before { transition-duration: .12s; }
+  .contact-card--whatsapp:is(:active,.is-pressed) :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail),
+  .contact-card--instagram:is(:active,.is-pressed) :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail) { transition: color .08s ease, border-color .12s ease, transform .35s var(--ease); }
+}
+html.motion-paused .contact-card--whatsapp::before,
+html.motion-paused .contact-card--instagram::before { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .camera-flash, .strobe-light, .camera-body::after { display: none !important; }
+  .contact-card--whatsapp::before, .contact-card--instagram::before { transition: none; }
+  .contact-card--whatsapp :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail),
+  .contact-card--instagram :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail) { transition: none; }
+  .contact-card--whatsapp:is(:active,.is-pressed) :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail),
+  .contact-card--instagram:is(:active,.is-pressed) :is(.contact-card-top,.contact-card-top > span:last-child,.contact-card-icon,.contact-card-detail) { transition: none; }
+}
+@media print {
+  .contact-card--whatsapp::before, .contact-card--instagram::before { display: none; }
+}
