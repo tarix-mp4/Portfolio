@@ -1,0 +1,123 @@
+{
+  "checks": [
+    "A: keyboard opens the correct showreel",
+    "A: showreel poster is portrait",
+    "A: Escape restores reel focus",
+    "A: monitor selects the original Elham record",
+    "A: authentic Elham ending and timecode",
+    "A: authentic Elham start frame",
+    "A: no fake scrubber for YouTube-only Playthings",
+    "A: gallery moves between original photos",
+    "A: clapper demo advances a take",
+    "B: all eight projects in the film index",
+    "B: deep link opens A Quiet Trail",
+    "B: keyboard disclosure expands one archive row",
+    "B: original Elham sheet reaches its final frame",
+    "B: portrait sprite remains 9:16",
+    "B: previous preview is released",
+    "B: keyboard cycles the real photographs",
+    "B: Escape restores gallery focus",
+    "studio: 320 px layout with all nine photos and no horizontal overflow",
+    "studio: 390 px layout with all nine photos and no horizontal overflow",
+    "studio: 768 px layout with all nine photos and no horizontal overflow",
+    "studio: 1280 px layout with all nine photos and no horizontal overflow",
+    "cut: 320 px layout with all nine photos and no horizontal overflow",
+    "cut: 390 px layout with all nine photos and no horizontal overflow",
+    "cut: 768 px layout with all nine photos and no horizontal overflow",
+    "cut: 1280 px layout with all nine photos and no horizontal overflow",
+    "A: reel opens at 390 px",
+    "A: scrub slider is operable in the 390 px layout",
+    "B: 390 px reel opens to the correct link",
+    "B: archive timeline works at 390 px",
+    "A: wireframe still is selectable",
+    "A: missing hardware WebGL retains the original still"
+  ],
+  "mobileChecks": [
+    {
+      "concept": "studio",
+      "client": 305,
+      "fonts": "loading",
+      "full": 305,
+      "photos": 9,
+      "title": "TAREQ ALBARQAWI",
+      "width": 320
+    },
+    {
+      "concept": "studio",
+      "client": 375,
+      "fonts": "loaded",
+      "full": 375,
+      "photos": 9,
+      "title": "TAREQ ALBARQAWI",
+      "width": 390
+    },
+    {
+      "concept": "studio",
+      "client": 753,
+      "fonts": "loaded",
+      "full": 753,
+      "photos": 9,
+      "title": "TAREQ ALBARQAWI",
+      "width": 768
+    },
+    {
+      "concept": "studio",
+      "client": 1265,
+      "fonts": "loaded",
+      "full": 1265,
+      "photos": 9,
+      "title": "TAREQ ALBARQAWI",
+      "width": 1280
+    },
+    {
+      "concept": "cut",
+      "client": 305,
+      "fonts": "loaded",
+      "full": 305,
+      "photos": 9,
+      "title": "TAREQ ALBARQAWI.",
+      "width": 320
+    },
+    {
+      "concept": "cut",
+      "client": 375,
+      "fonts": "loaded",
+      "full": 375,
+      "photos": 9,
+      "title": "TAREQ ALBARQAWI.",
+      "width": 390
+    },
+    {
+      "concept": "cut",
+      "client": 753,
+      "fonts": "loaded",
+      "full": 753,
+      "photos": 9,
+      "title": "TAREQ ALBARQAWI.",
+      "width": 768
+    },
+    {
+      "concept": "cut",
+      "client": 1265,
+      "fonts": "loaded",
+      "full": 1265,
+      "photos": 9,
+      "title": "TAREQ ALBARQAWI.",
+      "width": 1280
+    }
+  ],
+  "v7LocalScreening": {
+    "showreel": {
+      "error": null,
+      "paused": false,
+      "ready": 4,
+      "size": [
+        1080,
+        1920
+      ],
+      "source": "showreel.mp4",
+      "time": 0.101659
+    },
+    "removedOnClose": false
+  }
+}

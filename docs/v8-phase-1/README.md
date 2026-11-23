@@ -9,6 +9,8 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 [The Digital Studio](../../v8/phase-1/studio.html) · [The Director’s Cut](../../v8/phase-1/cut.html) · [V7 audit](v7-audit.md) · [Architecture and milestones](architecture-roadmap.md) · [Browser evidence](browser-evidence.md)
 
+**[Open the private interactive review](https://tareq-portfolio-v8-phase1-review.fortunepromo-4605.chatgpt.site)** · [Desktop screenshots](screens/desktop-comparison.jpg) · [Mobile screenshots](screens/mobile-comparison.jpg) · [Work, photography and finale](screens/section-comparison.jpg)
+
 ## Direction A — The Digital Studio
 
 **Visual idea: a closed soundstage you can operate.** Midnight ink, cyan instrument markings and a warm metal sculpture locate the visitor in a room. The name is the title; the fold reads as a showcase for a specific object rather than a generic 3D background. A movable camera is an explicit control, so the accessible, still-first scene stays equal in design status to the 3D mode.
