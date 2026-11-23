@@ -1,0 +1,516 @@
+{
+  "stage": {
+    "initial": {
+      "draws": 1,
+      "gel": "0",
+      "height": 936,
+      "rend": "software",
+      "scrollWidth": 1348,
+      "wakeups": 3,
+      "width": 1363,
+      "yaw": "0.000"
+    },
+    "cameraActive": {
+      "cue": true,
+      "flash": "lens-pop"
+    },
+    "reaction": {
+      "draws": 13,
+      "gel": "1",
+      "height": 936,
+      "rend": "software",
+      "scrollWidth": 1348,
+      "wakeups": 16,
+      "width": 1363,
+      "yaw": "2.328"
+    },
+    "settled": {
+      "draws": 28,
+      "gel": "1",
+      "height": 936,
+      "rend": "software",
+      "scrollWidth": 1348,
+      "wakeups": 33,
+      "width": 1363,
+      "yaw": "-1.398"
+    }
+  },
+  "reel": {
+    "open": {
+      "aspect": "9 / 16",
+      "at": 0,
+      "err": 0,
+      "pause": false,
+      "ready": 1,
+      "src": "media/reel-review.webm",
+      "x": 432,
+      "y": 768
+    },
+    "playing": {
+      "aspect": "9 / 16",
+      "at": 0.015352,
+      "err": 0,
+      "pause": false,
+      "ready": 4,
+      "src": "media/reel-review.webm",
+      "x": 432,
+      "y": 768
+    },
+    "unloaded": true
+  },
+  "cut": {
+    "initial": {
+      "progress": "",
+      "source": "none",
+      "t": "00:00.00",
+      "title": "A Quiet Trail",
+      "transfers": "1"
+    },
+    "end": {
+      "index": "32",
+      "progress": "1.0000",
+      "source": "url(\"/assets/video-previews/a-quiet-trail.webp\")",
+      "t": "06:48.25",
+      "title": "A Quiet Trail",
+      "transfers": "1"
+    },
+    "player": {
+      "aspect": "16 / 9",
+      "at": 0.021147,
+      "err": 0,
+      "pause": false,
+      "ready": 4,
+      "src": "media/quiet-trail-excerpt.webm",
+      "x": 640,
+      "y": 360
+    },
+    "restored": "a-quiet-trail",
+    "elham": {
+      "index": "1",
+      "progress": "0.0313",
+      "source": "url(\"/assets/video-previews/elham.webp\")",
+      "t": "00:22.29",
+      "title": "Elham",
+      "transfers": "2"
+    },
+    "control": {
+      "progress": "0",
+      "source": "none",
+      "t": "00:00.00",
+      "title": "Deer Scene",
+      "transfers": "2"
+    },
+    "playthings": {
+      "empty": true,
+      "timeline": true
+    }
+  },
+  "photo": {
+    "palette": "indigo",
+    "samePhoto": "../../assets/photography/frame-08-960.webp",
+    "title": "Blue hour, indoors",
+    "viewer": "Liquid gold"
+  },
+  "cat": {
+    "hit": {
+      "bottom": 495.4827270507813,
+      "frame": 506.703125,
+      "hit": "geralt-peek",
+      "top": 433.07818603515625
+    },
+    "celebration": "YOU FOUND GERALT!",
+    "flight": true,
+    "docked": {
+      "body": true,
+      "bottom": 4,
+      "images": [
+        [
+          "box-back",
+          true,
+          1024,
+          "0"
+        ],
+        [
+          "box-cat",
+          true,
+          1254,
+          "1"
+        ],
+        [
+          "box-front",
+          true,
+          1024,
+          "3"
+        ]
+      ],
+      "peekHidden": true,
+      "position": "fixed",
+      "right": 7.671875,
+      "scrollY": 2132,
+      "width": 113.125
+    },
+    "work": {
+      "body": true,
+      "bottom": 4,
+      "images": [
+        [
+          "box-back",
+          true,
+          1024,
+          "0"
+        ],
+        [
+          "box-cat",
+          true,
+          1254,
+          "1"
+        ],
+        [
+          "box-front",
+          true,
+          1024,
+          "3"
+        ]
+      ],
+      "peekHidden": true,
+      "position": "fixed",
+      "right": 7.671875,
+      "scrollY": 837,
+      "width": 113.125
+    },
+    "wrap": {
+      "body": true,
+      "bottom": 4,
+      "images": [
+        [
+          "box-back",
+          true,
+          1024,
+          "0"
+        ],
+        [
+          "box-cat",
+          true,
+          1254,
+          "1"
+        ],
+        [
+          "box-front",
+          true,
+          1024,
+          "3"
+        ]
+      ],
+      "peekHidden": true,
+      "position": "fixed",
+      "right": 7.671875,
+      "scrollY": 3295,
+      "width": 113.125
+    }
+  },
+  "widths": {
+    "320": {
+      "films": 8,
+      "layout": 305,
+      "photos": 9,
+      "span": 305,
+      "stage": 283,
+      "width": 320
+    },
+    "375": {
+      "films": 8,
+      "layout": 360,
+      "photos": 9,
+      "span": 360,
+      "stage": 338,
+      "width": 375
+    },
+    "390": {
+      "films": 8,
+      "layout": 375,
+      "photos": 9,
+      "span": 375,
+      "stage": 343,
+      "width": 390
+    },
+    "430": {
+      "films": 8,
+      "layout": 415,
+      "photos": 9,
+      "span": 415,
+      "stage": 383,
+      "width": 430
+    },
+    "768": {
+      "films": 8,
+      "layout": 753,
+      "photos": 9,
+      "span": 753,
+      "stage": 399,
+      "width": 768
+    },
+    "1280": {
+      "films": 8,
+      "layout": 1265,
+      "photos": 9,
+      "span": 1265,
+      "stage": 707,
+      "width": 1280
+    }
+  },
+  "idle": {
+    "before": {
+      "draws": "6",
+      "renderer": "software",
+      "wakes": "10",
+      "width": 390
+    },
+    "after": {
+      "draws": "6",
+      "renderer": "software",
+      "wakes": "10",
+      "width": 390
+    },
+    "offscreen": {
+      "draws": "9",
+      "renderer": "software",
+      "wakes": "22",
+      "width": 390
+    },
+    "offscreenLater": {
+      "draws": "9",
+      "renderer": "software",
+      "wakes": "22",
+      "width": 390
+    }
+  },
+  "mobile": {
+    "reel": {
+      "h": 768,
+      "paused": false,
+      "ready": 4,
+      "time": 0.135031,
+      "w": 432
+    },
+    "scrub": {
+      "index": "25",
+      "sheet": "url(\"/assets/video-previews/a-quiet-trail.webp\")",
+      "touch": "pan-y"
+    },
+    "dock": [
+      {
+        "bottom": 4,
+        "position": "fixed",
+        "x": 279.328125,
+        "y": 2107
+      },
+      {
+        "bottom": 4,
+        "position": "fixed",
+        "x": 279.328125,
+        "y": 869
+      },
+      {
+        "bottom": 4,
+        "position": "fixed",
+        "x": 279.328125,
+        "y": 3205
+      }
+    ],
+    "endState": {
+      "brand": "radial-gradient(ellipse at 86% 20%,#26cd75 0%,#1a9661 32%,#0a6345 62%,#102c2d 86%)",
+      "footerUncovered": true,
+      "position": "fixed",
+      "whatsappFocus": true
+    }
+  },
+  "hover": {
+    "before": [
+      -3,
+      1,
+      "linear-gradient(142deg, rgb(65, 50, 118), rgb(128, 45, 91), rgb(134, 84, 49))"
+    ],
+    "leave": {
+      "event": "pointerleave",
+      "samples": [
+        [
+          -3,
+          1
+        ],
+        [
+          463,
+          0.0486825
+        ],
+        [
+          529,
+          0.0168578
+        ]
+      ],
+      "end": [
+        913,
+        0
+      ]
+    },
+    "settledIn": {
+      "d": "0.64s, 0.725s",
+      "p": "1",
+      "where": "matrix(1.08, 0, 0, 1.08, 0, 0)"
+    },
+    "keyboard": {
+      "contrast": "rgb(244, 219, 192)",
+      "focus": true,
+      "link": "profile for @tarix.mov",
+      "transition": "0.64s, 0.725s"
+    },
+    "sampled": [
+      {
+        "animations": 18,
+        "opacity": 0,
+        "side": "In",
+        "t": 0
+      },
+      {
+        "animations": 18,
+        "opacity": 0.0633663,
+        "side": "In",
+        "t": 80
+      },
+      {
+        "animations": 18,
+        "opacity": 0.308445,
+        "side": "In",
+        "t": 160
+      },
+      {
+        "animations": 18,
+        "opacity": 0.599465,
+        "side": "In",
+        "t": 240
+      },
+      {
+        "animations": 18,
+        "opacity": 0.786306,
+        "side": "In",
+        "t": 320
+      },
+      {
+        "animations": 18,
+        "opacity": 0.896452,
+        "side": "In",
+        "t": 400
+      },
+      {
+        "animations": 18,
+        "opacity": 0.959334,
+        "side": "In",
+        "t": 480
+      },
+      {
+        "animations": 18,
+        "opacity": 0.990851,
+        "side": "In",
+        "t": 560
+      },
+      {
+        "animations": 18,
+        "opacity": 1,
+        "side": "In",
+        "t": 640
+      },
+      {
+        "animations": 17,
+        "opacity": 1,
+        "side": "Out",
+        "t": 0
+      },
+      {
+        "animations": 17,
+        "opacity": 0.936634,
+        "side": "Out",
+        "t": 80
+      },
+      {
+        "animations": 17,
+        "opacity": 0.691555,
+        "side": "Out",
+        "t": 160
+      },
+      {
+        "animations": 17,
+        "opacity": 0.400534,
+        "side": "Out",
+        "t": 240
+      },
+      {
+        "animations": 17,
+        "opacity": 0.213694,
+        "side": "Out",
+        "t": 320
+      },
+      {
+        "animations": 17,
+        "opacity": 0.103548,
+        "side": "Out",
+        "t": 400
+      },
+      {
+        "animations": 17,
+        "opacity": 0.0406657,
+        "side": "Out",
+        "t": 480
+      },
+      {
+        "animations": 17,
+        "opacity": 0.00914902,
+        "side": "Out",
+        "t": 560
+      },
+      {
+        "animations": 17,
+        "opacity": 0,
+        "side": "Out",
+        "t": 640
+      }
+    ],
+    "focusProof": {
+      "focus": true,
+      "opacity": "0"
+    }
+  },
+  "pointerScrub": {
+    "first": {
+      "frame": "3",
+      "pos": "60% 0%"
+    },
+    "last": {
+      "frame": "10",
+      "pos": "80% 20%"
+    }
+  },
+  "clap": {
+    "before": {
+      "busy": null,
+      "rotation": "none",
+      "scene": "01",
+      "take": "01"
+    },
+    "afterRapid": {
+      "busy": null,
+      "rotation": "109.654deg",
+      "scene": "02",
+      "take": "01"
+    }
+  },
+  "reduce": {
+    "gradientDuration": "1e-05s",
+    "on": true,
+    "scrub": "06:48.25"
+  },
+  "tour": {
+    "started": true,
+    "first": "Stage · orbit and relight",
+    "last": "Final grade · contact cards",
+    "completed": true
+  },
+  "console": []
+}
