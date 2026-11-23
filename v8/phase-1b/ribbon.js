@@ -2,6 +2,7 @@
    Rendering is invalidated by the page controller, never self-scheduled here. */
 (() => {
   const tau = Math.PI * 2;
+  const sides = [1,-1];
   const lamps = [
     [[-.78, .85, 1.45], [1.00, .85, .59], [.27, .44, .72]],
     [[-.96, .22, 1.38], [1.00, .58, .76], [.35, .39, .89]],
@@ -49,7 +50,7 @@
     const [light,key,fill]=lamps[gel];
     const l=norm(light[0]+state.lightX*.54,light[1]-state.lightY*.46,light[2]);
     return {w,h,sizeChanged,m:orient(yaw,pitch),l,key,fill,
-      focal: Math.min(1,w/h*1.08)*3.07 };
+      focal: Math.min(1,w/h*1.08)*2.43 };
   }
   const vert=`
     attribute vec3 p,n;
@@ -61,7 +62,7 @@
     void main(){
       v=model*p;N=model*n;band=edge;
       float w=4.6-v.z;
-      gl_Position=vec4(v.x*focal/aspect,(v.y+0.04)*focal,.9*w-.42,w);
+      gl_Position=vec4(v.x*focal/aspect,(v.y-.13)*focal,.9*w-.42,w);
     }`;
   const frag=`
     precision mediump float;
@@ -157,7 +158,7 @@
           const x=vertices[j],y=vertices[j+1],z=vertices[j+2];
           const vx=m[0]*x+m[3]*y+m[6]*z,vy=m[1]*x+m[4]*y+m[7]*z,vz=m[2]*x+m[5]*y+m[8]*z;
           const q=scale/(4.6-vz);
-          sx[i]=w*.5+vx*q;sy[i]=h*.5-(vy+.04)*q;sz[i]=vz;
+          sx[i]=w*.5+vx*q;sy[i]=h*.5-(vy-.13)*q;sz[i]=vz;
           const nx=vertices[j+3],ny=vertices[j+4],nz=vertices[j+5];
           const A=m[0]*nx+m[3]*ny+m[6]*nz,B=m[1]*nx+m[4]*ny+m[7]*nz,C=m[2]*nx+m[5]*ny+m[8]*nz;
           const distance=Math.hypot(vx,vy,4.6-vz),vx1=-vx/distance,vy1=-vy/distance,vz1=(4.6-vz)/distance;
@@ -166,7 +167,7 @@
           const raw=rx*l[0]+ry*l[1]+rz*l[2];
           const card=smooth(.55,.96,raw)*.58+Math.pow(Math.max(0,raw),38)*.36+smooth(.78,.97,-.162*rx+.931*ry+.328*rz)*.21;
           const cut=Math.pow(Math.max(0,.761*rx-.198*ry+.618*rz),9)*.36;
-          for(const side of [1,-1]){
+          for(const side of sides){
             const out=side===1?front:back,ii=i*3;
             const d= Math.max(0,side*(A*l[0]+B*l[1]+C*l[2]))*.66 + Math.max(0,side*(.761*A-.198*B+.618*C))*.24;
             const fresnel=cut+Math.pow(clamp(1-side*angle,0,1),3)*.32;

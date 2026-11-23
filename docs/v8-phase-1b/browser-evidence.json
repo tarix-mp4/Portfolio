@@ -1,0 +1,190 @@
+{
+  "checks": [
+    "The stage rendered actual mesh geometry",
+    "Keyboard orbit changed the live rendered pose",
+    "Blue gel applied to the live scene",
+    "Full native showreel plays in a true 9:16 frame",
+    "Closing removes the native video decoder",
+    "The actual film sheet reaches the final frame",
+    "Playhead changes the frame crop",
+    "Portrait VFX sprite maintains 9:16",
+    "YouTube-only Playthings has no invented timeline",
+    "The 12-second A Quiet Trail excerpt plays natively",
+    "Selecting the photograph changes its title and room lighting",
+    "The accessible photo viewer navigates original photography",
+    "The hidden cat opens a discovery dialog",
+    "Discovered Geralt stays fixed when scrolling into the finale",
+    "Interactive clapper advances Scene or Take correctly",
+    "Tour begins with the live ribbon",
+    "Tour scrubs genuine frames in the cut room",
+    "Tour changes darkroom lighting",
+    "Tour reaches the slate and ends",
+    "320 px layout without horizontal overflow",
+    "390 px layout without horizontal overflow",
+    "768 px layout without horizontal overflow",
+    "1280 px layout without horizontal overflow",
+    "390 px orbit operates the same actual mesh",
+    "390 px timeline reaches its genuine last frame",
+    "The live mesh stops drawing while the page is settled",
+    "A pointer drag rotates the sculpture in the live viewport",
+    "Full detail changes the actual drawing-buffer size",
+    "Pause motion is operable from the keyboard",
+    "Interaction audio is opt-in and reversible",
+    "Native scroll changes the title and prop motion in the stage",
+    "The offscreen hero does not render while the archive scrubs",
+    "Native 9:16 showreel plays in the 390 px layout",
+    "No review video is requested before playback"
+  ],
+  "samples": {
+    "initial3d": {
+      "buffer": "467×395",
+      "drawCosts": "[34.9]",
+      "draws": "1",
+      "quality": "balanced",
+      "renderer": "software",
+      "requests": "4",
+      "stageRig": "",
+      "triangles": "2560",
+      "yaw": "0.000"
+    },
+    "orbit": {
+      "buffer": "467×395",
+      "drawCosts": "[34.9,3.7,3.5,3,3.4]",
+      "draws": "5",
+      "quality": "balanced",
+      "renderer": "software",
+      "requests": "9",
+      "stageRig": "",
+      "triangles": "2560",
+      "yaw": "1.886"
+    },
+    "reel": {
+      "error": null,
+      "h": 768,
+      "src": "media/reel-review.webm",
+      "time": 0.114577,
+      "w": 432
+    },
+    "excerpt": {
+      "error": null,
+      "h": 360,
+      "src": "media/quiet-trail-excerpt.webm",
+      "time": 0.121822,
+      "w": 640
+    },
+    "clapper": "Clap the slate, Scene 02 · Take 01",
+    "layout": [
+      {
+        "client": 305,
+        "fonts": "loaded",
+        "mode": "software",
+        "scroll": 305,
+        "width": 320
+      },
+      {
+        "client": 375,
+        "fonts": "loaded",
+        "mode": "software",
+        "scroll": 375,
+        "width": 390
+      },
+      {
+        "client": 753,
+        "fonts": "loaded",
+        "mode": "software",
+        "scroll": 753,
+        "width": 768
+      },
+      {
+        "client": 1265,
+        "fonts": "loaded",
+        "mode": "software",
+        "scroll": 1265,
+        "width": 1280
+      }
+    ],
+    "mobileOrbit": {
+      "buffer": "341×268",
+      "drawCosts": "[9.5,2.2,16.2,2.1,14,2.1,2.1]",
+      "draws": "7",
+      "quality": "balanced",
+      "renderer": "software",
+      "requests": "12",
+      "stageRig": "",
+      "triangles": "2560",
+      "yaw": "-0.906"
+    },
+    "idle": {
+      "elapsedMs": 33403,
+      "drawsBefore": "1",
+      "drawsAfter": "1"
+    },
+    "pointerDrag": {
+      "buffer": "467×395",
+      "drawCosts": "[21.5,13,5.7,3.9,3.9,3.7]",
+      "draws": "6",
+      "quality": "balanced",
+      "renderer": "software",
+      "requests": "13",
+      "stageRig": "",
+      "triangles": "2560",
+      "yaw": "0.358"
+    },
+    "full": {
+      "buffer": "604×512",
+      "drawCosts": "[21.5,13,5.7,3.9,3.9,3.7,7.8,5.1,4.8,5.3]",
+      "draws": "10",
+      "quality": "full",
+      "renderer": "software",
+      "requests": "21",
+      "stageRig": "",
+      "triangles": "2560",
+      "yaw": "0.554"
+    },
+    "scroll": {
+      "before": {
+        "prop": "0.0px",
+        "title": "0.0px",
+        "y": 0
+      },
+      "after": {
+        "prop": "-3.7px",
+        "title": "-3.4px",
+        "y": 120
+      }
+    },
+    "offscreenDraws": "18",
+    "endStage": {
+      "buffer": "467×395",
+      "drawCosts": "[21.5,13,5.7,3.9,3.9,3.7,7.8,5.1,4.8,5.3,4.1,3.9,4,3.3,3.7,4,4.4,7.3]",
+      "draws": "18",
+      "quality": "balanced",
+      "renderer": "software",
+      "requests": "32",
+      "stageRig": "",
+      "triangles": "2560",
+      "yaw": "1.162"
+    },
+    "mobileReel": {
+      "currentTime": 0.106547,
+      "height": 768,
+      "screenHeight": 479.515625,
+      "screenWidth": 269.71875,
+      "width": 432
+    },
+    "beforePlayback": {
+      "media": "0",
+      "videoElements": 0
+    },
+    "longFrames": [
+      {
+        "duration": 141,
+        "blocking": 89
+      },
+      {
+        "duration": 79,
+        "blocking": 28
+      }
+    ]
+  }
+}

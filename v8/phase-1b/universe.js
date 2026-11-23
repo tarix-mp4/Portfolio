@@ -19,6 +19,25 @@
   const sceneCanvas=$('[data-scene]'), scenePoster=$('.gold-still');
   const viewer=$('#viewer'), geraltDialog=$('.geralt-dialog');
   const params=new URLSearchParams(location.search);
+  const profiling=params.has('profile');
+  if (profiling && 'PerformanceObserver' in window) {
+    // Review-only counters: collecting them does not schedule animation frames.
+    const transferCount=()=>performance.getEntriesByType('resource').filter(r=>/\.webm(?:$|\?)/.test(r.name)).length;
+    root.dataset.mediaTransfers=String(transferCount());
+    if(PerformanceObserver.supportedEntryTypes?.includes('resource')){
+      new PerformanceObserver(()=>{root.dataset.mediaTransfers=String(transferCount());}).observe({type:'resource',buffered:true});
+    }
+    if(PerformanceObserver.supportedEntryTypes?.includes('long-animation-frame')){
+      const slow=[];
+      new PerformanceObserver(list=>{
+        for(const f of list.getEntries()){
+          slow.push({duration:Math.round(f.duration),blocking:Math.round(f.blockingDuration)});
+          if(slow.length>16)slow.shift();
+        }
+        root.dataset.longFrames=JSON.stringify(slow);
+      }).observe({type:'long-animation-frame',buffered:true});
+    }
+  }
 
   // One frame coordinator for scroll, stage easing, and active-frame painting.
   let job=0, wakeCount=0, stageVisible=false, scene=null, rendererPromise, rendererFailed=false;
@@ -26,7 +45,6 @@
   let travel=0, dirty=true, scrollDirty=true, measureDirty=true, bounds=[], pageHeight=1, currentChapter=null;
   let lastGlFrame=0, lastSceneAt=0, lateRun=0, sceneCount=0, dynamicLevel=null;
   let previewPaint=null;
-  const geometry = {width:1,height:1};
   const cost=[];
   function schedule() {
     if (!job && !document.hidden) job=requestAnimationFrame(tick);
@@ -93,7 +111,8 @@
   }
   function synchronizeMotion() {
     motion.setAttribute('aria-pressed',String(quiet()));
-    motion.setAttribute('aria-label',quiet()?'Resume optional motion':'Pause motion');
+    motion.disabled=systemReduced.matches;
+    motion.setAttribute('aria-label',systemReduced.matches?'Using system reduced motion':quiet()?'Resume optional motion':'Pause motion');
     $('span',motion).textContent=quiet()?'▶':'Ⅱ';
     root.classList.toggle('motion-off',quiet());
     // User-selected orbit, lighting and scrubbing remain usable at reduced motion.
@@ -115,7 +134,8 @@
     if (dragging) {
       wantedAngle=clamp(startAngle+(e.clientX-startX)*.006,-95*Math.PI/180,125*Math.PI/180);
       orbit.value=String(Math.round(wantedAngle*180/Math.PI));
-    } else if (fieldRect) {
+    } else {
+      fieldRect ||= field.getBoundingClientRect();
       wantedX=clamp((e.clientX-fieldRect.left)/fieldRect.width)*2-1;
       wantedY=clamp((e.clientY-fieldRect.top)/fieldRect.height)*2-1;
     }
@@ -191,7 +211,7 @@
       rig.dataset.buffer=`${meta.width}×${meta.height}`;
       rig.dataset.triangles=String(meta.triangles);
       rig.dataset.quality=quality;
-      if (params.has('profile')){
+      if (profiling){
         cost.push(Math.round(cpu*100)/100);if(cost.length>300)cost.shift();
         rig.dataset.drawCosts=JSON.stringify(cost);
         rig.dataset.requests=String(wakeCount);
@@ -213,7 +233,7 @@
   const track=$('.timeline-track'), strip=$('.timeline-film'), tiles=$$('span',strip), slider=$('#scrub');
   const timecode=$('[data-timecode]'), frameNote=$('[data-frame-note]');
   let active='a-quiet-trail',frameIndex=0,frameToken=0,decoded=null,filmBounds=null;
-  let useTouch=true;
+  let useTouch=true, scrubTarget=0;
   const time=(s)=>`${String(Math.floor(s/60)).padStart(2,'0')}:${(s%60).toFixed(2).padStart(5,'0')}`;
   function resetFrame(){
     frameToken++;decoded=null;frameIndex=0;previewPaint=null;
@@ -282,8 +302,10 @@
     filmBounds=picture.getBoundingClientRect();
   },{passive:true});
   picture.addEventListener('pointermove',e=>{
-    if(!pointerFine.matches||useTouch||!films[active].preview||!filmBounds||quiet())return;
-    frame((e.clientX-filmBounds.left)/filmBounds.width*(films[active].preview.frameCount-1));
+    if(!pointerFine.matches||useTouch||!films[active].preview||quiet())return;
+    filmBounds ||= picture.getBoundingClientRect();
+    scrubTarget=(e.clientX-filmBounds.left)/filmBounds.width*(films[active].preview.frameCount-1);
+    previewPaint=()=>frame(scrubTarget);schedule();
   },{passive:true});
   addEventListener('scroll',()=>{filmBounds=null;fieldRect=null;},{passive:true});
 
@@ -314,14 +336,14 @@
   function dialogTitle(title){const h=el('h2',title);h.id='view-title';viewBody.append(h);}
   function mountViewer(trigger){
     if(viewer.open)return;
-    returnFocus=trigger;viewer.showModal();$('[data-close]',viewer).focus();
+    returnFocus=trigger;viewer.showModal();refreshPeek();$('[data-close]',viewer).focus();
   }
   $('[data-close]',viewer).addEventListener('click',()=>viewer.close());
   viewer.addEventListener('close',()=>{
     const node=$('video',viewer);
     if(node){node.pause();node.removeAttribute('src');node.load();}
     viewBody.replaceChildren();
-    viewPhotoIndex=-1;returnFocus?.focus({preventScroll:true});returnFocus=null;dirty=true;schedule();
+    viewPhotoIndex=-1;returnFocus?.focus({preventScroll:true});returnFocus=null;dirty=true;schedule();refreshPeek();
   });
   function showFilm(key,trigger){
     const film=films[key];if(!film || !viewer.showModal)return false;
@@ -385,7 +407,7 @@
     try {cue.currentTime=0;void cue.play().catch(()=>{});} catch (_) {}
   }
   function soundLabel(){
-    sound.setAttribute('aria-pressed',String(soundOn));sound.setAttribute('aria-label',soundOn?'Turn sound off':'Turn sound on');
+    sound.setAttribute('aria-pressed',String(soundOn));sound.setAttribute('aria-label',soundOn?'Turn interaction sounds off':'Turn interaction sounds on');
     $('span',sound).textContent=soundOn?'Sound on':'Sound off';
   }
   sound.addEventListener('click',()=>{soundOn=!soundOn;soundLabel();if(soundOn)tone('interface');else Object.values(audio).forEach(a=>a.pause());});
