@@ -21,3 +21,14 @@
 .review-a .concept-copy{--accent:#175262}
 .review-note{padding-top:1.25rem;color:var(--muted)}
 @media(max-width:650px){.review-intro{display:grid;gap:1rem}.concepts{grid-template-columns:minmax(0,1fr)}}
+
+.universe-feature{display:grid;grid-template-columns:1fr 1.08fr;align-items:center;background:#18111f;color:#f9eddd;border:1px solid #583a56;margin-bottom:1rem;min-width:0}
+.universe-object{aspect-ratio:1.45;position:relative;overflow:hidden;background:radial-gradient(ellipse at 58% 45%,#634365,#2c203e 48%,#100d19 92%);isolation:isolate}
+.universe-object::before{position:absolute;content:"";inset:16%;border:1px solid #d8afbe75;border-radius:50%;transform:rotate(-23deg) scaleY(.72)}
+.universe-object img{height:100%;width:100%;object-fit:contain;transform:scale(1.18)}
+.universe-feature-copy{padding:clamp(1.1rem,4vw,2.6rem)}
+.universe-feature-copy .mono{color:#e9ab98}
+.universe-feature-copy h2{font-size:clamp(3.65rem,7vw,7.4rem);margin:.15em 0 .18em}
+.universe-feature-copy p:not(.mono){color:#dfc7db;max-width:24rem}
+.universe-feature-copy .button{--accent:#ebbc8e;--on-accent:#291722;margin-top:1rem}
+@media(max-width:650px){.universe-feature{grid-template-columns:1fr}.universe-object{aspect-ratio:1.8}}
