@@ -10,6 +10,7 @@
 <link rel="preload" href="../../assets/barlow-condensed-bold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="universe.css">
 <link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="correction.css">
 <script src="universe.js" defer></script>
 </head>
 <body id="top">
@@ -27,7 +28,7 @@
 <section class="stage-section chapter" id="stage" data-chapter="stage" aria-labelledby="hero-title">
   <div class="stage-halo" aria-hidden="true"></div>
   <div class="shell stage-layout">
-    <div class="stage-overline mono"><span><b class="tally"></b> The Cinematic Universe</span><a href="../phase-1/index.html">Concept C / Motion review</a></div>
+    <div class="stage-overline mono"><span><b class="tally"></b> The Cinematic Universe</span><a href="#review-cues" data-review-open>Latest review / <b data-release>Concept C</b></a></div>
     <div class="hero-copy">
       <p class="eyebrow mono"><span></span> Film · 3D · Motion</p>
       <h1 id="hero-title" aria-label="Tareq Albarqawi"><span class="hero-first">TAREQ</span> <span class="hero-surname">ALBARQAWI</span></h1>
@@ -37,6 +38,10 @@
         <a class="gold-button" href="https://www.youtube.com/shorts/CYh5Zr_7LJ8?feature=share" data-screen="showreel"><span class="play" aria-hidden="true"></span><span>Watch showreel</span><small>9:16</small></a>
         <button type="button" class="tour-button" data-tour aria-pressed="false">Play studio tour</button>
       </div>
+      <a class="reel-ticket" href="https://www.youtube.com/shorts/CYh5Zr_7LJ8?feature=share" data-screen="showreel" aria-label="Screen the 2026 showreel">
+        <span class="reel-ticket-frame"><img src="../../assets/showreel-CYh5Zr_7LJ8.webp" alt="" width="80" height="142"><i class="play"></i></span>
+        <span><span class="mono">2026 / 9:16</span><strong>THE SHOWREEL.</strong><small>Live action meets digital worlds</small></span>
+      </a>
     </div>
     <div class="stage-rig" data-stage-rig data-gel="0">
       <div class="lens-field" data-orbit-area>
@@ -46,14 +51,16 @@
         <div class="orbit-ring" aria-hidden="true"><i></i><i></i><i></i></div>
         <div class="floor-rig" aria-hidden="true"></div>
         <div class="gold-shadow" aria-hidden="true"></div>
+        <div class="stage-shaft" aria-hidden="true"></div>
+        <div class="focus-spot" aria-hidden="true"></div>
         <img class="gold-still" src="../../assets/motion-sculpture.webp" alt="The original 3D gold ribbon sculpture" width="1400" height="1400" fetchpriority="high">
         <canvas data-scene hidden aria-hidden="true"></canvas>
-        <div class="chip chip-blender" aria-hidden="true"><img src="../../assets/blender-mark.svg" alt="" width="56" height="46"></div>
-        <div class="chip chip-ae" aria-hidden="true"><img src="../../assets/after-effects.svg" alt="" width="42" height="42"></div>
+        <button type="button" class="chip chip-blender" data-prop="blender" aria-label="Roll the Blender emblem" title="Roll the Blender emblem"><span class="chip-depth"><img src="../../assets/blender-mark.svg" alt="" width="56" height="46"></span></button>
+        <button type="button" class="chip chip-ae" data-prop="after-effects" aria-label="Flip the After Effects emblem" title="Flip the After Effects emblem"><span class="chip-depth"><img src="../../assets/after-effects.svg" alt="" width="42" height="42"><img class="chip-reverse" src="../../assets/after-effects.svg" alt="" width="42" height="42"></span></button>
         <button type="button" class="practical" data-practical aria-label="Trigger the studio camera flash" title="Camera flash"><span class="practical-body"></span><span class="practical-glass"></span><span class="practical-tally"></span></button>
         <div class="practical-spill" aria-hidden="true"></div>
         <div class="reticle a" aria-hidden="true"></div><div class="reticle b" aria-hidden="true"></div>
-        <span class="scope-label mono" aria-hidden="true">LENS 01 / FORM STUDY</span>
+        <span class="scope-label mono" data-stage-scope aria-hidden="true">LENS 01 / FORM STUDY</span>
       </div>
       <div class="scene-console">
         <div class="console-title"><span class="mono">The gold ribbon</span><span data-render-status>Loading the stage</span></div>
@@ -79,12 +86,14 @@
       <p class="chapter-intro">Watch the work through the editor’s eye. Sweep the monitor or drag the playhead to move through original frames.</p>
     </header>
     <div class="edit-case">
+      <button type="button" class="geralt-peek geralt-cut" data-geralt aria-label="Who’s behind the monitor?" hidden><img src="../../assets/geralt.svg" alt="" width="105" height="105" loading="lazy"></button>
       <div class="edit-machine" data-machine>
         <div class="monitor-lintel mono"><span><b class="tally"></b> Source monitor</span><span data-monitor-aspect>16:9 / Short film</span></div>
         <div class="edit-view">
           <div class="edit-picture" data-picture>
             <div class="picture-sleeve"><img src="../../assets/a-quiet-trail-w04hOwvVkdc.webp" alt="Still from A Quiet Trail" width="1280" height="720" loading="lazy"><span class="sprite" hidden aria-hidden="true"></span></div>
             <span class="picture-edge" aria-hidden="true"></span>
+            <span class="frame-cue mono" data-frame-cue aria-hidden="true">SOURCE / 01</span>
           </div>
           <article class="edit-meta">
             <p class="mono edit-role" data-film-role>Director / Short film</p>
@@ -146,6 +155,7 @@
       <h2 class="kinetic" id="stills-title"><span>AFTER</span><span>DARK<i>.</i></span></h2>
       <p class="chapter-intro">From a flame-lit kitchen to a room after closing. Each photograph sets the light in the room.</p>
     </header>
+    <div class="review-peek mono" data-review-peek hidden><button type="button" class="outline-button" data-cue-geralt>Cue Geralt’s peek</button><span data-peek-instruction>Watch the top edge of the photograph.</span></div>
     <div class="exhibition">
       <figure class="print-wall">
         <div class="print-edge">
@@ -191,14 +201,34 @@
         </button>
         </div>
       </div>
-      <button type="button" class="geralt-peek" data-geralt aria-label="Who’s behind the print?" hidden><img src="../../assets/geralt.svg" alt="" width="105" height="105" loading="lazy"></button>
+      <button type="button" class="geralt-peek" data-geralt="print" aria-label="Who’s behind the print?" hidden><img src="../../assets/geralt.svg" alt="" width="105" height="105" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+<section class="crew-section chapter" id="crew" data-chapter="stills" aria-labelledby="crew-title">
+  <div class="shell">
+    <div class="chapter-slate mono"><span><b>04</b> / The person behind the work</span><span>Muharraq, Bahrain</span></div>
+    <div class="crew-grid">
+      <figure class="crew-portrait"><img src="../../assets/tareq-portrait.webp" width="869" height="950" alt="Tareq Albarqawi" loading="lazy" decoding="async"><figcaption class="mono">Tareq Albarqawi / Director &amp; motion artist</figcaption></figure>
+      <div class="crew-story">
+        <h2 class="kinetic" id="crew-title"><span>BEHIND THE</span><span>FRAME<i>.</i></span></h2>
+        <p>I’m Tareq, a Film and Animation graduate from Bahrain Polytechnic, working across 3D animation, video editing, and motion graphics.</p>
+        <p>My work moves between directing digital content, building animated worlds, and creating commercial marketing campaigns. From scene creation and lighting to the final edit, I bring the visual and technical sides of storytelling together.</p>
+        <details class="crew-details"><summary>Experience &amp; education</summary><div>
+          <p><strong>Content Creator &amp; Customer Service Representative</strong><br>Ammar Optician, Ammar Center &amp; Rosa Belle · September 2025–present</p>
+          <p>Social media planning, launch campaigns, commercial videography, motion graphics, product photography, creative team coordination, and customer relations.</p>
+          <p><strong>Bachelor of Film and Animation</strong><br>Bahrain Polytechnic · Graduated 2026</p>
+        </div></details>
+        <p class="mono crew-meta">Arabic &amp; English · Fluent</p>
+        <a class="outline-button" href="https://tarix-portfolio.netlify.app/Tareq_Albarqawi_CV.pdf">View the CV</a>
+      </div>
     </div>
   </div>
 </section>
 <section class="wrap-section chapter" id="wrap" data-chapter="wrap" aria-labelledby="wrap-title">
   <div class="wrap-light" aria-hidden="true"></div><div class="wrap-shutter" aria-hidden="true"></div>
   <div class="shell">
-    <div class="chapter-slate mono"><span><b>04</b> / Closing credits</span><span>Bahrain</span></div>
+    <div class="chapter-slate mono"><span><b>05</b> / Closing credits</span><span>Bahrain</span></div>
     <div class="wrap-grid">
       <div class="wrap-story">
         <p class="eyebrow mono"><span></span> All departments</p>
@@ -206,28 +236,41 @@
         <p>Have a story to tell? Let’s make it.</p>
       </div>
       <div class="wrap-stage">
+        <div class="wrap-optics" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="wrap-strip" aria-hidden="true"></span>
         <div class="reel-object" aria-hidden="true"><img src="../../assets/cinema-reel.svg" width="280" height="280" alt="" loading="lazy"></div>
         <button type="button" class="wrap-clapper" data-clapper aria-label="Clap the slate, scene 01 take 01">
           <span class="clapper-hinge" aria-hidden="true"></span>
           <span class="slate-face"><span class="mono">T. Albarqawi / End slate</span><span class="slate-title">CUT<i>.</i></span><span class="slate-readout mono"><span>SCENE <b data-scene-count>01</b></span><span>TAKE <b data-take-count>01</b></span></span></span>
         </button>
-        <p class="mono end-prop-label">Clap the slate</p>
+        <p class="mono end-prop-label" data-slate-cue>Clap the slate</p>
         <p class="visually-hidden" aria-live="polite" data-clap-status></p>
       </div>
     </div>
+    <div id="contact-cues" class="contact-booth mono"><span><i class="tally"></i> Contact / Color channels</span><button type="button" class="quiet-button" data-color-cue aria-pressed="false">Play color pass</button></div>
     <address class="contact-links">
       <a data-channel="email" href="mailto:tariqbarqawi71@gmail.com"><span class="contact-cap"><span class="mono">Email</span><span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span></span><strong>Start a project</strong><span>tariqbarqawi71@gmail.com</span></a>
       <a data-channel="whatsapp" href="https://wa.me/97333302904"><span class="contact-cap"><span class="mono">WhatsApp</span><span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 17.3 3.4 21l4-1.1a8.8 8.8 0 1 0-2.8-2.6Z"/><path class="channel-fill" d="M9 7.4c.3-.2.8-.1.9.2l.9 2c.1.3 0 .5-.2.8l-.6.6a7.6 7.6 0 0 0 3.2 2.8l.6-.8c.2-.2.4-.3.7-.2l2 .9c.3.2.4.6.3 1-.3 1-1.1 1.6-2 1.6-2.4 0-6.4-2.6-7.1-5.6-.3-1.4.4-2.8 1.3-3.3Z"/></svg></span></span><strong>Chat on WhatsApp</strong><span>+973 3330 2904</span></a>
       <a data-channel="instagram" href="https://www.instagram.com/tarix.mov/"><span class="contact-cap"><span class="mono">Instagram</span><span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="channel-fill" cx="17" cy="7.5" r="1"/></svg></span></span><strong>View Instagram</strong><span>@tarix.mov</span></a>
       <a data-channel="phone" href="tel:+97333302904"><span class="contact-cap"><span class="mono">Phone</span><span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.1 3.5 10 8l-2 2a14 14 0 0 0 6 6l2-2 4.5 2v2.4c0 1.2-.9 2.1-2.1 2.1C11 20.5 3.5 13 3.5 5.6c0-1.2.9-2.1 2.1-2.1z"/><path class="phone-wave" d="M14.5 4a6.9 6.9 0 0 1 5.5 5.5m-5.5-2a3.3 3.3 0 0 1 2 2"/></svg></span></span><strong>Call directly</strong><span>+973 3330 2904</span></a>
     </address>
-    <footer class="wrap-footer mono"><span>Tareq Albarqawi</span><a href="../phase-1/index.html">Compare design directions</a><span>V8 · Motion review</span></footer>
+    <footer class="wrap-footer mono"><span>Tareq Albarqawi</span><a href="#crew">About &amp; experience</a><a href="#review-cues" data-review-open>Review cues</a><span>V8 · Concept C</span></footer>
   </div>
 </section>
 </main>
 <aside class="tour-status" data-tour-status hidden aria-label="Studio tour">
  <div><span class="mono">Studio tour</span><span data-tour-step aria-live="polite"></span></div><button type="button" class="outline-button" data-tour-stop>Stop tour</button>
 </aside>
+<dialog class="view-dialog review-cues" id="review-cues" aria-labelledby="review-title">
+  <div class="viewer-top"><span class="mono">Concept C / Review</span><form method="dialog"><button type="submit" class="outline-button">Close</button></form></div>
+  <div class="viewer-content">
+    <p class="mono">Live cues</p>
+    <h2 id="review-title">RUN OF SHOW.</h2>
+    <p>Try the live interactions on this build, or compare it with a previous version.</p>
+    <div class="review-links"><button type="button" class="gold-button" data-review-jump="geralt">Find Geralt</button><button type="button" class="outline-button" data-review-jump="contacts">Try contact colors</button><a class="outline-button" href="../phase-1b/">Original Concept C</a><a class="outline-button" href="https://tarix-portfolio.netlify.app/">Live V7</a></div>
+    <p class="mono review-build" data-release-long></p>
+  </div>
+</dialog>
 <dialog class="view-dialog" id="viewer" aria-labelledby="view-title">
  <div class="viewer-top"><span class="mono" data-dialog-label>Cut room</span><button type="button" class="outline-button" data-close>Close</button></div>
  <div class="viewer-content"></div>
@@ -237,7 +280,7 @@
     <img src="../../assets/geralt.svg" width="270" height="270" alt="Geralt, the portfolio’s pixel-art cat" loading="lazy">
     <p class="mono">An uncredited cameo</p>
     <h2 id="found-title">YOU FOUND GERALT<span>!</span></h2>
-    <button type="button" class="gold-button" data-dock-geralt>Back to the studio</button>
+    <button type="button" class="gold-button" data-dock-geralt>Send Geralt to his box</button>
   </div>
 </dialog>
 <div class="geralt-curtain" aria-hidden="true" hidden></div>
