@@ -40,14 +40,17 @@
       -sz*cx,cz*cx,sx,cz*sy+sz*sx*cy,sz*sy-cz*sx*cy,cx*cy];
   }
   function settings(state, canvas, software) {
-    const {width,height,quality,gel,yaw,pitch} = state;
+    const {width,height,quality,lampMix,yaw,pitch} = state;
     const pixels = software ? (quality==='full'?310000:185000) : (quality==='full'?1550000:740000);
     const maxDpr = software ? 1 : quality==='full' ? 1.85 : 1.25;
     const scale = Math.min(devicePixelRatio||1,maxDpr,Math.sqrt(pixels/(width*height)));
     const w=Math.max(2,Math.floor(width*scale)),h=Math.max(2,Math.floor(height*scale));
     const sizeChanged=canvas.width!==w || canvas.height!==h;
     if (sizeChanged) {canvas.width=w;canvas.height=h;}
-    const [light,key,fill]=lamps[gel];
+    // Blend the three original light rigs before sending the uniforms, keeping
+    // material shading and geometry identical in both renderers.
+    const [light,key,fill]=lamps[0].map((components,i)=>components.map((_,j)=>
+      lamps[0][i][j]*lampMix[0]+lamps[1][i][j]*lampMix[1]+lamps[2][i][j]*lampMix[2]));
     const l=norm(light[0]+state.lightX*.54,light[1]-state.lightY*.46,light[2]);
     return {w,h,sizeChanged,m:orient(yaw,pitch),l,key,fill,
       focal: Math.min(1,w/h*1.08)*2.43 };

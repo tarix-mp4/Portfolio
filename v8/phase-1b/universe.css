@@ -180,10 +180,7 @@ address{font-style:normal}
 .exposure-tab:hover,.exposure-tab[aria-pressed=true]{border:2px solid var(--gold)}
 .geralt-peek{position:absolute;z-index:1;top:0;left:36%;width:clamp(4.5rem,7vw,6.1rem);aspect-ratio:1;border:0;background:none;padding:0;transform:translateY(-55%) rotate(-8deg);transform-origin:bottom center}
 .geralt-peek img,.geralt-companion img{image-rendering:pixelated;width:100%;height:100%;object-fit:contain;pointer-events:none}
-.geralt-peek:hover{transform:translateY(-60%) rotate(-6deg)}
-.geralt-companion{position:fixed;z-index:13;bottom:calc(12px + env(safe-area-inset-bottom));right:calc(12px + env(safe-area-inset-right));width:64px;height:64px;padding:0;border:0;background:none}
-.geralt-companion img{clip-path:inset(0 0 28% 0)}
-.geralt-companion span{position:absolute;inset:auto 0 3% 0;height:29%;border:1px solid #f4ba8eaa;border-radius:47%;background:radial-gradient(ellipse at 50% 0,#48324a,#191121 76%);box-shadow:0 6px 14px #06030bb0}
+.geralt-companion{padding:0;border:0;background:none}
 .wrap-section{--chapter-accent:#ffc194;background:linear-gradient(145deg,#3c182a,#1d101e 60%,#0e0b14 90%)}
 .wrap-light{position:absolute;z-index:-1;inset:-12% -2% -4%;pointer-events:none;background:radial-gradient(ellipse at 67% 37%,#c567494e,transparent 57%),radial-gradient(ellipse at 91% 20%,#7b40716a,transparent 67%);transform:translateY(var(--halo-shift,0));transition:opacity 250ms ease}
 .wrap-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;gap:1.2rem;padding-block:clamp(2.4rem,6vw,5.5rem)}
@@ -209,9 +206,6 @@ address{font-style:normal}
 .contact-links .mono{color:var(--gold)}
 .contact-links strong{font-size:1.1rem}
 .contact-links a>span:last-child{color:#e1cbdc;font-size:.88rem}
-.contact-links a:hover{border-color:#ffc391;background:#482938}
-.contact-links a[href*="wa.me"]:hover{background:#144335}
-.contact-links a[href*="instagram"]:hover{background:linear-gradient(142deg,#413276,#802d5b,#865431)}
 .wrap-footer{display:flex;justify-content:space-between;gap:.7rem;flex-wrap:wrap;border-top:1px solid #d3a6b149;margin-top:1.2rem;padding-top:.8rem;color:#d6bfd0}
 .wrap-footer a{text-decoration:underline;text-underline-offset:.25em}
 .tour-status{position:fixed;z-index:15;right:calc(1rem + env(safe-area-inset-right));bottom:calc(1rem + env(safe-area-inset-bottom));max-width:calc(100vw - 2rem);display:flex;align-items:center;gap:.9rem;padding:.6rem;border:1px solid #efc09785;background:#22142af5;box-shadow:0 12px 30px #07050bd9}

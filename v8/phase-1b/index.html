@@ -9,6 +9,7 @@
 <link rel="icon" href="../../favicon.png">
 <link rel="preload" href="../../assets/barlow-condensed-bold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="universe.css">
+<link rel="stylesheet" href="motion.css">
 <script src="universe.js" defer></script>
 </head>
 <body id="top">
@@ -26,7 +27,7 @@
 <section class="stage-section chapter" id="stage" data-chapter="stage" aria-labelledby="hero-title">
   <div class="stage-halo" aria-hidden="true"></div>
   <div class="shell stage-layout">
-    <div class="stage-overline mono"><span><b class="tally"></b> The Cinematic Universe</span><a href="../phase-1/index.html">Concept C / Design review</a></div>
+    <div class="stage-overline mono"><span><b class="tally"></b> The Cinematic Universe</span><a href="../phase-1/index.html">Concept C / Motion review</a></div>
     <div class="hero-copy">
       <p class="eyebrow mono"><span></span> Film · 3D · Motion</p>
       <h1 id="hero-title" aria-label="Tareq Albarqawi"><span class="hero-first">TAREQ</span> <span class="hero-surname">ALBARQAWI</span></h1>
@@ -37,9 +38,10 @@
         <button type="button" class="tour-button" data-tour aria-pressed="false">Play studio tour</button>
       </div>
     </div>
-    <div class="stage-rig" data-stage-rig>
+    <div class="stage-rig" data-stage-rig data-gel="0">
       <div class="lens-field" data-orbit-area>
         <div class="stage-back" aria-hidden="true"></div>
+        <div class="stage-wash wash-gold" aria-hidden="true"></div><div class="stage-wash wash-gel" aria-hidden="true"></div><div class="stage-wash wash-blue" aria-hidden="true"></div>
         <div class="stage-prism" aria-hidden="true"></div>
         <div class="orbit-ring" aria-hidden="true"><i></i><i></i><i></i></div>
         <div class="floor-rig" aria-hidden="true"></div>
@@ -48,7 +50,8 @@
         <canvas data-scene hidden aria-hidden="true"></canvas>
         <div class="chip chip-blender" aria-hidden="true"><img src="../../assets/blender-mark.svg" alt="" width="56" height="46"></div>
         <div class="chip chip-ae" aria-hidden="true"><img src="../../assets/after-effects.svg" alt="" width="42" height="42"></div>
-        <div class="practical" aria-hidden="true"><span class="practical-body"></span><span class="practical-glass"></span><span class="practical-tally"></span></div>
+        <button type="button" class="practical" data-practical aria-label="Trigger the studio camera flash" title="Camera flash"><span class="practical-body"></span><span class="practical-glass"></span><span class="practical-tally"></span></button>
+        <div class="practical-spill" aria-hidden="true"></div>
         <div class="reticle a" aria-hidden="true"></div><div class="reticle b" aria-hidden="true"></div>
         <span class="scope-label mono" aria-hidden="true">LENS 01 / FORM STUDY</span>
       </div>
@@ -92,7 +95,7 @@
         </div>
         <div class="timeline" data-timeline>
           <div class="timeline-label mono"><label for="scrub">Frame timeline</label><output for="scrub" data-timecode aria-hidden="true">00:00.00</output></div>
-          <div class="timeline-track"><div class="timeline-film" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div><span class="playhead" aria-hidden="true"></span><input type="range" id="scrub" min="0" max="32" value="0" step="1" aria-label="Scrub the original video frames"></div>
+          <div class="timeline-track"><div class="timeline-film" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div><span class="timeline-ink" aria-hidden="true"></span><span class="playhead" aria-hidden="true"></span><input type="range" id="scrub" min="0" max="32" value="0" step="1" aria-label="Scrub the original video frames"></div>
           <p data-frame-note class="frame-note">33 authentic frames · preview scrub</p>
         </div>
         <p class="timeline-empty mono" data-no-timeline hidden>YouTube original · no native frame sheet</p>
@@ -193,7 +196,7 @@
   </div>
 </section>
 <section class="wrap-section chapter" id="wrap" data-chapter="wrap" aria-labelledby="wrap-title">
-  <div class="wrap-light" aria-hidden="true"></div>
+  <div class="wrap-light" aria-hidden="true"></div><div class="wrap-shutter" aria-hidden="true"></div>
   <div class="shell">
     <div class="chapter-slate mono"><span><b>04</b> / Closing credits</span><span>Bahrain</span></div>
     <div class="wrap-grid">
@@ -212,11 +215,13 @@
         <p class="visually-hidden" aria-live="polite" data-clap-status></p>
       </div>
     </div>
-    <address class="contact-links"><a href="mailto:tariqbarqawi71@gmail.com"><span class="mono">Email</span><strong>Start a project</strong><span>tariqbarqawi71@gmail.com</span></a>
-<a href="https://wa.me/97333302904"><span class="mono">WhatsApp</span><strong>Chat on WhatsApp</strong><span>+973 3330 2904</span></a>
-<a href="https://www.instagram.com/tarix.mov/"><span class="mono">Instagram</span><strong>View Instagram</strong><span>@tarix.mov</span></a>
-<a href="tel:+97333302904"><span class="mono">Phone</span><strong>Call directly</strong><span>+973 3330 2904</span></a></address>
-    <footer class="wrap-footer mono"><span>Tareq Albarqawi</span><a href="../phase-1/index.html">Compare design directions</a><span>V8 · Concept review</span></footer>
+    <address class="contact-links">
+      <a data-channel="email" href="mailto:tariqbarqawi71@gmail.com"><span class="contact-cap"><span class="mono">Email</span><span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span></span><strong>Start a project</strong><span>tariqbarqawi71@gmail.com</span></a>
+      <a data-channel="whatsapp" href="https://wa.me/97333302904"><span class="contact-cap"><span class="mono">WhatsApp</span><span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 17.3 3.4 21l4-1.1a8.8 8.8 0 1 0-2.8-2.6Z"/><path class="channel-fill" d="M9 7.4c.3-.2.8-.1.9.2l.9 2c.1.3 0 .5-.2.8l-.6.6a7.6 7.6 0 0 0 3.2 2.8l.6-.8c.2-.2.4-.3.7-.2l2 .9c.3.2.4.6.3 1-.3 1-1.1 1.6-2 1.6-2.4 0-6.4-2.6-7.1-5.6-.3-1.4.4-2.8 1.3-3.3Z"/></svg></span></span><strong>Chat on WhatsApp</strong><span>+973 3330 2904</span></a>
+      <a data-channel="instagram" href="https://www.instagram.com/tarix.mov/"><span class="contact-cap"><span class="mono">Instagram</span><span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="channel-fill" cx="17" cy="7.5" r="1"/></svg></span></span><strong>View Instagram</strong><span>@tarix.mov</span></a>
+      <a data-channel="phone" href="tel:+97333302904"><span class="contact-cap"><span class="mono">Phone</span><span class="channel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.1 3.5 10 8l-2 2a14 14 0 0 0 6 6l2-2 4.5 2v2.4c0 1.2-.9 2.1-2.1 2.1C11 20.5 3.5 13 3.5 5.6c0-1.2.9-2.1 2.1-2.1z"/><path class="phone-wave" d="M14.5 4a6.9 6.9 0 0 1 5.5 5.5m-5.5-2a3.3 3.3 0 0 1 2 2"/></svg></span></span><strong>Call directly</strong><span>+973 3330 2904</span></a>
+    </address>
+    <footer class="wrap-footer mono"><span>Tareq Albarqawi</span><a href="../phase-1/index.html">Compare design directions</a><span>V8 · Motion review</span></footer>
   </div>
 </section>
 </main>
@@ -235,7 +240,12 @@
     <button type="button" class="gold-button" data-dock-geralt>Back to the studio</button>
   </div>
 </dialog>
-<button type="button" class="geralt-companion" data-companion aria-label="Say hello to Geralt" hidden><img src="../../assets/geralt.svg" alt="" width="66" height="66" loading="lazy"><span aria-hidden="true"></span></button>
+<div class="geralt-curtain" aria-hidden="true" hidden></div>
+<button type="button" class="geralt-companion" data-companion aria-label="Say hello to Geralt in his cardboard box" hidden>
+  <img class="box-back" src="media/geralt/cardboard-box.svg" alt="" width="64" height="64" loading="lazy">
+  <img class="box-cat" src="../../assets/geralt.svg" alt="" width="64" height="64" loading="lazy">
+  <img class="box-front" src="media/geralt/cardboard-box-front.svg" alt="" width="64" height="64" loading="lazy">
+</button>
 <script type="application/json" id="films-c">{"showreel":{"title":"Showreel 2026","role":"3D Animation / Motion Design / Live Action","description":"A single pass through the work: 3D environments, motion design, live-action grading and the seams where they meet.","ratio":"9:16","poster":"../../assets/showreel-CYh5Zr_7LJ8.webp","category":"Showreel","youtube":"https://www.youtube.com/shorts/CYh5Zr_7LJ8?feature=share","media":"media/reel-review.webm","mediaNote":"Full 2026 showreel · 9:16 · compact review copy"},"a-quiet-trail":{"title":"A Quiet Trail","role":"Director","description":"A live-action Bahraini adaptation inspired by Little Red Riding Hood, emphasizing atmospheric tension and visual storytelling.","ratio":"16:9","poster":"../../assets/a-quiet-trail-w04hOwvVkdc.webp","category":"Short film","youtube":"https://www.youtube.com/watch?v=w04hOwvVkdc","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,12.75,25.5,38.291667,51.041667,63.791667,76.541667,89.291667,102.083333,114.833333,127.583333,140.333333,153.083333,165.833333,178.625,191.375,204.125,216.875,229.625,242.416667,255.166667,267.916667,280.666667,293.416667,306.166667,318.958333,331.708333,344.458333,357.208333,369.958333,382.75,395.5,408.25],"duration":408.291667,"frameWidth":640,"frameHeight":360,"sheet":"../../assets/video-previews/a-quiet-trail.webp"},"media":"media/quiet-trail-excerpt.webm","mediaNote":"12-second excerpt · original film, 01:32–01:44"},"elham":{"title":"Elham","role":"Editor & Assistant Cinematographer","description":"A documentary biopic detailing a Bahraini artist's journey from art school to becoming an art educator.","ratio":"16:9","poster":"../../assets/elham-3bs6WSHtgNQ.webp","category":"Documentary","youtube":"https://www.youtube.com/watch?v=3bs6WSHtgNQ","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,22.288933,44.577867,66.8668,89.155733,111.4113,133.700233,155.989167,178.2781,200.567033,222.855967,245.1449,267.400467,289.6894,311.978333,334.267267,356.5562,378.845133,401.134067,423.423,445.711933,467.9675,490.256433,512.545367,534.8343,557.123233,579.412167,601.7011,623.956667,646.2456,668.534533,690.823467,713.1124],"duration":713.145767,"frameWidth":640,"frameHeight":360,"sheet":"../../assets/video-previews/elham.webp"}},"deer-scene":{"title":"Deer Scene","role":"3D Artist","description":"An idling deer in an atmospheric Blender environment, exploring lighting and mood.","ratio":"16:9","poster":"../phase-1/media/deer-frame.webp","category":"3D environment","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,0.458333,0.875,1.333333,1.791667,2.208333,2.666667,3.125,3.541667,4.0,4.458333,4.875,5.333333,5.791667,6.208333,6.666667,7.083333,7.541667,8.0,8.416667,8.875,9.333333,9.75,10.208333,10.666667,11.083333,11.541667,12.0,12.416667,12.875,13.333333,13.75,14.208333],"duration":14.25,"frameWidth":640,"frameHeight":360,"sheet":"../../assets/video-previews/deer-scene.webp"}},"vfx":{"title":"VFX & 3D Integration","role":"VFX Artist","description":"Integrating 3D models into real-world live-action footage for dynamic visual effects.","ratio":"9:16","poster":"../../assets/vfx-kDgd1eqAqTs.webp","category":"Visual effects","youtube":"https://www.youtube.com/watch?v=kDgd1eqAqTs","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,1.1,2.2,3.3,4.4,5.5,6.566667,7.666667,8.766667,9.866667,10.966667,12.066667,13.166667,14.266667,15.366667,16.466667,17.533333,18.633333,19.733333,20.833333,21.933333,23.033333,24.133333,25.233333,26.333333,27.433333,28.533333,29.6,30.7,31.8,32.9,34.0,35.1],"duration":35.133333,"frameWidth":270,"frameHeight":480,"sheet":"../../assets/video-previews/vfx.webp"}},"playthings":{"title":"Playthings","role":"Solo Creator - 3D Animation","description":"An independent 3D animated short focusing on suspense and stylized storytelling.","ratio":"16:9","poster":"../../assets/playthings-hDDDlkD6jYc.webp","category":"3D animation","youtube":"https://www.youtube.com/watch?v=hDDDlkD6jYc"},"vision-types":{"title":"Vision Types Simulation","role":"3D & Motion Designer","description":"Highly realistic simulation of optical vision impairments combining Blender and After Effects.","ratio":"9:16","poster":"../../assets/vision-types-JmTyY6GTCEQ.webp","category":"Motion design","youtube":"https://www.youtube.com/watch?v=JmTyY6GTCEQ","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,0.566667,1.133333,1.7,2.266667,2.833333,3.4,3.966667,4.533333,5.066667,5.633333,6.2,6.766667,7.333333,7.9,8.466667,9.033333,9.6,10.166667,10.733333,11.3,11.866667,12.433333,13.0,13.533333,14.1,14.666667,15.233333,15.8,16.366667,16.933333,17.5,18.066667],"duration":18.1,"frameWidth":270,"frameHeight":480,"sheet":"../../assets/video-previews/vision-types.webp"}},"acuity":{"title":"Acuity Comparison","role":"3D & Motion Designer","description":"A split-screen technical visualization comparing optical conditions side-by-side.","ratio":"9:16","poster":"../../assets/acuity-rgeq3qAihJA.webp","category":"Motion design","youtube":"https://www.youtube.com/watch?v=rgeq3qAihJA","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,0.8,1.6,2.433333,3.233333,4.033333,4.866667,5.666667,6.466667,7.266667,8.066667,8.9,9.7,10.5,11.333333,12.133333,12.933333,13.733333,14.533333,15.366667,16.166667,16.966667,17.8,18.6,19.4,20.2,21.0,21.833333,22.633333,23.433333,24.266667,25.066667,25.866667],"duration":25.9,"frameWidth":270,"frameHeight":480,"sheet":"../../assets/video-previews/acuity.webp"}},"social-campaigns":{"title":"Social Campaigns","role":"Videographer & Editor","description":"High-end commercial videography tailored for engaging brand marketing campaigns.","ratio":"9:16","poster":"../../assets/social-campaigns-flJJizkurxQ.webp","category":"Commercial","youtube":"https://www.youtube.com/watch?v=flJJizkurxQ","preview":{"columns":6,"rows":6,"frameCount":33,"times":[0.0,2.48,4.96,7.48,9.96,12.44,14.96,17.44,19.92,22.4,24.88,27.4,29.88,32.36,34.88,37.36,39.84,42.32,44.8,47.32,49.8,52.28,54.8,57.28,59.76,62.24,64.72,67.24,69.72,72.2,74.72,77.2,79.68],"duration":79.72,"frameWidth":270,"frameHeight":480,"sheet":"../../assets/video-previews/social-campaigns.webp"}}}</script>
 <script type="application/json" id="photos-c">[{"title":"Into the heat","category":"Culinary","number":"01","palette":"amber","alt":"Preparation beside a dramatic flame-lit oven.","small":"../../assets/photography/frame-01-480.webp","image":"../../assets/photography/frame-01-960.webp","detail":"../../assets/photography/frame-01-1367.webp"},{"title":"A matter of focus","category":"Culinary","number":"02","palette":"amber","alt":"Close-up of food being prepared, with a shallow depth of field.","small":"../../assets/photography/frame-02-480.webp","image":"../../assets/photography/frame-02-960.webp","detail":"../../assets/photography/frame-02-1367.webp"},{"title":"Oven light","category":"Culinary","number":"03","palette":"amber","alt":"Freshly baked food beside the warm glow of an oven.","small":"../../assets/photography/frame-03-480.webp","image":"../../assets/photography/frame-03-960.webp","detail":"../../assets/photography/frame-03-1367.webp"},{"title":"After the fire","category":"Performance","number":"04","palette":"fire","alt":"A fire performer surrounded by dramatic red and orange light.","small":"../../assets/photography/frame-04-480.webp","image":"../../assets/photography/frame-04-960.webp","detail":"../../assets/photography/frame-04-1367.webp"},{"title":"The night has a rhythm","category":"Nightlife","number":"05","palette":"indigo","alt":"A DJ wearing headphones in atmospheric nightlife lighting.","small":"../../assets/photography/frame-05-480.webp","image":"../../assets/photography/frame-05-960.webp","detail":"../../assets/photography/frame-05-1367.webp"},{"title":"A place in the dark","category":"Atmosphere","number":"06","palette":"amber","alt":"A reserved table illuminated by a warm pool of light.","small":"../../assets/photography/frame-06-480.webp","image":"../../assets/photography/frame-06-960.webp","detail":"../../assets/photography/frame-06-1367.webp"},{"title":"Between pours","category":"People & craft","number":"07","palette":"amber","alt":"A bartender preparing a beverage in a warmly lit bar.","small":"../../assets/photography/frame-07-480.webp","image":"../../assets/photography/frame-07-960.webp","detail":"../../assets/photography/frame-07-1367.webp"},{"title":"Blue hour, indoors","category":"Interiors","number":"08","palette":"indigo","alt":"A moody lounge interior with blue and purple lighting.","small":"../../assets/photography/frame-08-480.webp","image":"../../assets/photography/frame-08-960.webp","detail":"../../assets/photography/frame-08-1367.webp"},{"title":"Liquid gold","category":"Details","number":"09","palette":"amber","alt":"Bottles arranged on shelves illuminated by dramatic gold lighting.","small":"../../assets/photography/frame-09-480.webp","image":"../../assets/photography/frame-09-960.webp","detail":"../../assets/photography/frame-09-1367.webp"}]</script>
 </body>
